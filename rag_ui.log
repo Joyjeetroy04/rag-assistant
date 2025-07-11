@@ -1,0 +1,3 @@
+2025-07-06 19:36:20,186  INFO  Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-07-06 19:36:20,295  INFO  Load pretrained SentenceTransformer: all‑MiniLM‑L6‑v2
+2025-07-06 19:36:20,295  WARNING  No sentence-transformers model found with name sentence-transformers/all‑MiniLM‑L6‑v2. Creating a new one with MEAN pooling.

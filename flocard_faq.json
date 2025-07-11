@@ -1,0 +1,975 @@
+[
+  {
+    "id": "1",
+    "text": "Log in to the Flocard app and tap on the profile icon at the top-right corner to access your account settings.",
+    "metadata": {
+      "category": "account",
+      "source": "flocard_faq",
+      "recency": 2025,
+      "priority": 8
+    }
+  },
+  {
+    "id": "2",
+    "text": "To earn Flocoins, participate in partner brand activities, scan QR codes during campus events, or complete daily engagement tasks.",
+    "metadata": {
+      "category": "rewards",
+      "source": "flocard_faq",
+      "recency": 2025,
+      "priority": 10
+    }
+  },
+  {
+    "id": "3",
+    "text": "Redeem your Flocoins by visiting the 'Redeem' tab and selecting offers like canteen discounts, merchandise, or vouchers.",
+    "metadata": {
+      "category": "rewards",
+      "source": "flocard_faq",
+      "recency": 2025,
+      "priority": 9
+    }
+  },
+  {
+    "id": "4",
+    "text": "If your Flocoins are not reflecting, try refreshing the app or check if the event/task was eligible. Contact support if the issue persists.",
+    "metadata": {
+      "category": "support",
+      "source": "flocard_faq",
+      "recency": 2025,
+      "priority": 6
+    }
+  },
+  {
+    "id": "5",
+    "text": "You can view your Flocard transactions by navigating to the 'Wallet' section and tapping on 'Transaction History'.",
+    "metadata": {
+      "category": "rewards",
+      "source": "flocard_faq",
+      "recency": 2025,
+      "priority": 7
+    }
+  },
+  {
+    "id": "6",
+    "text": "To update your profile picture or name, go to 'Profile' > 'Edit Profile' and save your changes.",
+    "metadata": {
+      "category": "account",
+      "source": "flocard_faq",
+      "recency": 2025,
+      "priority": 5
+    }
+  },
+  {
+    "id": "7",
+    "text": "Forgot your Flocard password? Tap on 'Forgot Password' on the login screen and follow the email instructions to reset it.",
+    "metadata": {
+      "category": "account",
+      "source": "flocard_faq",
+      "recency": 2025,
+      "priority": 8
+    }
+  },
+  {
+    "id": "8",
+    "text": "The Flocard leaderboard shows top users by Flocoin earnings. Earn more by engaging in daily activities and exclusive events.",
+    "metadata": {
+      "category": "features",
+      "source": "flocard_faq",
+      "recency": 2025,
+      "priority": 6
+    }
+  },
+  {
+    "id": "9",
+    "text": "Enable push notifications in app settings to stay updated on new reward opportunities, leaderboard changes, and campaigns.",
+    "metadata": {
+      "category": "notifications",
+      "source": "flocard_faq",
+      "recency": 2025,
+      "priority": 5
+    }
+  },
+  {
+    "id": "10",
+    "text": "To report a bug or give feedback, go to 'Settings' > 'Help & Feedback' and submit your message. Screenshots are appreciated.",
+    "metadata": {
+      "category": "support",
+      "source": "flocard_faq",
+      "recency": 2025,
+      "priority": 7
+    }
+  },
+  {
+    "id": "11",
+    "text": "Flocard is available for both Android and iOS devices. Download it from the Google Play Store or Apple App Store.",
+    "metadata": {
+      "category": "general",
+      "source": "flocard_faq",
+      "recency": 2025,
+      "priority": 4
+    }
+  },
+  {
+    "id": "12",
+    "text": "For security, Flocard uses encryption and secure servers to protect your data. Always keep your app updated for the latest security features.",
+    "metadata": {
+      "category": "security",
+      "source": "flocard_faq",
+      "recency": 2025,
+      "priority": 9
+    }
+  },
+  {
+    "id": "13",
+    "text": "Flocard supports multiple languages. Change your language preference in the app settings to select your preferred language.",
+    "metadata": {
+      "category": "general",
+      "source": "flocard_faq",
+      "recency": 2025,
+      "priority": 4
+    }
+  },
+  {
+    "id": "14",
+    "text": "To delete your Flocard account, go to 'Settings' > 'Account' > 'Delete Account'. This action is irreversible.",
+    "metadata": {
+      "category": "account",
+      "source": "flocard_faq",
+      "recency": 2025,
+      "priority": 10
+    }
+  },
+  {
+    "id": "15",
+    "text": "Flocard's customer support can be reached via the 'Help & Feedback' section in the app or by emailing support@flocard.com.",
+    "metadata": {
+      "category": "support",
+      "source": "flocard_faq",
+      "recency": 2025,
+      "priority": 8
+    }
+  },
+  {
+    "id": "16",
+    "text": "For more information, visit the Flocard website or check the in-app resources.",
+    "metadata": {
+      "category": "general",
+      "source": "flocard_faq",
+      "recency": 2025,
+      "priority": 5
+    }
+  },
+  {
+    "id": "17",
+    "text": "Flocard is designed to enhance campus life by providing rewards and engagement opportunities through a digital platform.",
+    "metadata": {
+      "category": "general",
+      "source": "flocard_faq",
+      "recency": 2025,
+      "priority": 3
+    }
+  },
+  {
+    "id": "18",
+    "text": "To change your notification preferences, go to 'Settings' > 'Notifications' and select the types of notifications you want to receive.",
+    "metadata": {
+      "category": "notifications",
+      "source": "flocard_faq",
+      "recency": 2025,
+      "priority": 6
+    }
+  },
+  {
+    "id": "19",
+    "text": "Flocard's terms of service and privacy policy can be found in the app under 'Settings' > 'Legal'.",
+    "metadata": {
+      "category": "legal",
+      "source": "flocard_faq",
+      "recency": 2025,
+      "priority": 7
+    }
+  },
+  {
+    "id": "20",
+    "text": "To log out of Flocard, go to 'Settings' > 'Account' and tap on 'Log Out'.",
+    "metadata": {
+      "category": "account",
+      "source": "flocard_faq",
+      "recency": 2025,
+      "priority": 5
+    }
+  },
+  {
+    "id": "21",
+    "text": "Flocard's app updates are released regularly. Enable auto-updates in your app store settings to always have the latest version.",
+    "metadata": {
+      "category": "general",
+      "source": "flocard_faq",
+      "recency": 2025,
+      "priority": 4
+    }
+  },
+  {
+    "id": "22",
+    "text": "To change your campus or institution in Flocard, go to 'Settings' > 'Campus' and select your new campus from the list.",
+    "metadata": {
+      "category": "account",
+      "source": "flocard_faq",
+      "recency": 2025,
+      "priority": 6
+    }
+  },
+  {
+    "id": "23",
+    "text": "Flocard's referral program allows you to earn Flocoins by inviting friends. Share your referral code found in 'Settings' > 'Referral'.",
+    "metadata": {
+      "category": "rewards",
+      "source": "flocard_faq",
+      "recency": 2025,
+      "priority": 7
+    }
+  },
+  {
+    "id": "24",
+    "text": "To customize your Flocard experience, explore the 'Settings' section where you can adjust themes, notifications, and more.",
+    "metadata": {
+      "category": "features",
+      "source": "flocard_faq",
+      "recency": 2025,
+      "priority": 6
+    }
+  },
+  {
+    "id": "25",
+    "text": "Flocard's community guidelines ensure a respectful and engaging environment. Review them in 'Settings' > 'Community Guidelines'.",
+    "metadata": {
+      "category": "general",
+      "source": "flocard_faq",
+      "recency": 2025,
+      "priority": 5
+    }
+  },
+  {
+    "id": "26",
+    "text": "Flocard supports dark mode. Enable it in 'Settings' > 'Display' to reduce eye strain and save battery life.",
+    "metadata": {
+      "category": "features",
+      "source": "flocard_faq",
+      "recency": 2025,
+      "priority": 6
+    }
+  },
+  {
+    "id": "27",
+    "text": "To view upcoming events and activities, check the 'Events' tab in the app for a calendar of scheduled events.",
+    "metadata": {
+      "category": "features",
+      "source": "flocard_faq",
+      "recency": 2025,
+      "priority": 7
+    }
+  },
+  {
+    "id": "28",
+    "text": "Flocard's privacy settings allow you to control who can see your profile and activities. Adjust these in 'Settings' > 'Privacy'.",
+    "metadata": {
+      "category": "privacy",
+      "source": "flocard_faq",
+      "recency": 2025,
+      "priority": 8
+    }
+  },
+  {
+    "id": "29",
+    "text": "To contact Flocard support, use the in-app chat feature or email support@flocard.com.",
+    "metadata": {
+      "category": "support",
+      "source": "flocard_faq",
+      "recency": 2025,
+      "priority": 9
+    }
+  },
+  {
+    "id": "30",
+    "text": "Flocard's accessibility features include voice commands and screen reader support. Enable these in 'Settings' > 'Accessibility'.",
+    "metadata": {
+      "category": "accessibility",
+      "source": "flocard_faq",
+      "recency": 2025,
+      "priority": 6
+    }
+  },
+  {
+    "id": "31",
+    "text": "How does FloCard support sustainability and climate action? Each FloCard plants a tree, reducing paper card usage and contributing to multiple UN SDGs including climate action, reforestation, and innovation.",
+    "metadata": {
+      "category": "sustainability",
+      "source": "flocard_faq",
+      "recency": 2025,
+      "priority": 5
+    }
+  },
+  {
+    "id": "32",
+    "text": "How secure is my data on FloCard? Your card data is stored on a decentralized blockchain (FLO), ensuring privacy, immutability, and zero centralized access.",
+    "metadata": {
+      "category": "security",
+      "source": "flocard_faq",
+      "recency": 2025,
+      "priority": 5
+    }
+  },
+  {
+    "id": "33",
+    "text": "Is FloCard free to use? Yes. The app is free for individuals. Enterprise features like analytics, branding, and team management may require subscriptions in the future.",
+    "metadata": {
+      "category": "pricing",
+      "source": "flocard_appstore",
+      "recency": 2025,
+      "priority": 4
+    }
+  },
+  {
+    "id": "34",
+    "text": "Can I create multiple FloCards? Yes. Create personalized versions for different networks\u00e2\u20ac\u201dsuch as job seekers, clients, or eco-projects\u00e2\u20ac\u201dwith individual QR codes.",
+    "metadata": {
+      "category": "functionality",
+      "source": "flocard_faq",
+      "recency": 2025,
+      "priority": 4
+    }
+  },
+  {
+    "id": "35",
+    "text": "What is the Flip feature in FloCard? Flip enables secure, in-app messaging for real-time engagement with users who\u00e2\u20ac\u2122ve received your card.",
+    "metadata": {
+      "category": "functionality",
+      "source": "flocard_faq",
+      "recency": 2025,
+      "priority": 3
+    }
+  },
+  {
+    "id": "36",
+    "text": "How does FloCard help partners and communities? FloCard for Community enables NGOs, colleges, and CSR groups to manage climate funding, event networking, and SDG impact tracking.",
+    "metadata": {
+      "category": "partner",
+      "source": "flocard_marketplace",
+      "recency": 2025,
+      "priority": 5
+    }
+  },
+  {
+    "id": "37",
+    "text": "Can I integrate FloCard with LinkedIn or my email? Yes. FloCard allows linking social profiles and auto-copying emails, phone, and handles from your profile card.",
+    "metadata": {
+      "category": "integration",
+      "source": "flocard_faq",
+      "recency": 2025,
+      "priority": 3
+    }
+  },
+  {
+    "id": "38",
+    "text": "What makes FloCard eco-friendly? It eliminates physical printing, encourages digital sharing, and supports verified reforestation partners through every card creation.",
+    "metadata": {
+      "category": "sustainability",
+      "source": "flocard_faq",
+      "recency": 2025,
+      "priority": 4
+    }
+  },
+  {
+    "id": "39",
+    "text": "Can I use FloCard for events? Yes. Event organizers can issue digital badges using FloCards, track booth interactions, and share event impact dashboards.",
+    "metadata": {
+      "category": "events",
+      "source": "flocard_faq",
+      "recency": 2025,
+      "priority": 5
+    }
+  },
+  {
+    "id": "40",
+    "text": "What is the impact dashboard in FloCard for Community? It shows metrics like trees planted, carbon offset, and people engaged across your organization.",
+    "metadata": {
+      "category": "analytics",
+      "source": "flocard_marketplace",
+      "recency": 2025,
+      "priority": 5
+    }
+  },
+  {
+    "id": "41",
+    "text": "Can I embed my FloCard on a website? Yes. Use the embed code provided to display your digital card on websites, blogs, and portfolios.",
+    "metadata": {
+      "category": "integration",
+      "source": "flocard_faq",
+      "recency": 2025,
+      "priority": 4
+    }
+  },
+  {
+    "id": "42",
+    "text": "Does FloCard track who viewed my card? You can track interactions via smart analytics if enabled. Viewer data is anonymized and privacy-respecting.",
+    "metadata": {
+      "category": "analytics",
+      "source": "flocard_faq",
+      "recency": 2025,
+      "priority": 3
+    }
+  },
+  {
+    "id": "43",
+    "text": "Can FloCard be used by teams and companies? Yes. Organizations can manage member cards, set branding standards, and track collective climate impact.",
+    "metadata": {
+      "category": "teams",
+      "source": "flocard_marketplace",
+      "recency": 2025,
+      "priority": 5
+    }
+  },
+  {
+    "id": "44",
+    "text": "How do I customize my FloCard? You can edit colors, logos, icons, banners, and links. Advanced design features are coming soon for premium users.",
+    "metadata": {
+      "category": "customization",
+      "source": "flocard_faq",
+      "recency": 2025,
+      "priority": 4
+    }
+  },
+  {
+    "id": "45",
+    "text": "Is there a limit to how many trees I can plant? No limit. Each new card or share adds to your environmental impact. Track it on your profile.",
+    "metadata": {
+      "category": "sustainability",
+      "source": "flocard_faq",
+      "recency": 2025,
+      "priority": 4
+    }
+  },
+  {
+    "id": "46",
+    "text": "What is FloCard? FloCard is a sustainable digital identity platform that replaces paper business cards with dynamic, blockchain-backed digital profiles, enabling seamless networking and measurable climate impact.",
+    "metadata": {
+      "category": "introduction",
+      "source": "flocard_faq",
+      "recency": 2025,
+      "priority": 5
+    }
+  },
+  {
+    "id": "47",
+    "text": "How does FloCard work? Users create customizable digital cards linked to a secure blockchain identity. These can be shared via QR code, link, or NFC, and each card plants a tree, tracked in the app.",
+    "metadata": {
+      "category": "functionality",
+      "source": "flocard_faq",
+      "recency": 2025,
+      "priority": 5
+    }
+  },
+  {
+    "id": "48",
+    "text": "How does FloCard benefit the world? FloCard supports global reforestation and carbon reduction, helps achieve UN SDGs, and reduces dependency on paper-based networking tools across industries.",
+    "metadata": {
+      "category": "impact",
+      "source": "flocard_impact",
+      "recency": 2025,
+      "priority": 5
+    }
+  },
+  {
+    "id": "49",
+    "text": "What is FloCard's impact on individuals? It empowers users with a digital-first identity, boosts credibility, reduces paper waste, and gives every professional a way to contribute to sustainability with minimal effort.",
+    "metadata": {
+      "category": "impact",
+      "source": "flocard_faq",
+      "recency": 2025,
+      "priority": 5
+    }
+  },
+  {
+    "id": "50",
+    "text": "How does FloCard help society? It builds climate-conscious habits into professional life, connects change-makers, and enables transparent, trackable environmental action at scale.",
+    "metadata": {
+      "category": "impact",
+      "source": "flocard_marketplace",
+      "recency": 2025,
+      "priority": 5
+    }
+  },
+  {
+    "id": "51",
+    "text": "What is FloCard\u00e2\u20ac\u2122s mission? FloCard exists to embed sustainability into everyday interactions\u00e2\u20ac\u201ddigitally transforming identities while building forests and regenerating communities.",
+    "metadata": {
+      "category": "mission",
+      "source": "flocard_about",
+      "recency": 2025,
+      "priority": 5
+    }
+  },
+  {
+    "id": "52",
+    "text": "Why should I use FloCard over regular business cards? Unlike paper cards, FloCard is digital, customizable, easy to update, eco-friendly, and unlocks messaging, analytics, and carbon tracking.",
+    "metadata": {
+      "category": "why_flocard",
+      "source": "flocard_faq",
+      "recency": 2025,
+      "priority": 5
+    }
+  },
+  {
+    "id": "53",
+    "text": "Who can use FloCard? Anyone\u00e2\u20ac\u201dstudents, professionals, freelancers, teams, NGOs, and enterprises\u00e2\u20ac\u201dcan use FloCard to network sustainably and showcase identity with impact.",
+    "metadata": {
+      "category": "audience",
+      "source": "flocard_about",
+      "recency": 2025,
+      "priority": 4
+    }
+  },
+  {
+    "id": "54",
+    "text": "What makes FloCard unique? It merges blockchain, networking, and climate action into one seamless tool, making every share a form of eco-contribution.",
+    "metadata": {
+      "category": "uniqueness",
+      "source": "flocard_faq",
+      "recency": 2025,
+      "priority": 4
+    }
+  },
+  {
+    "id": "55",
+    "text": "Does FloCard offer a mobile app? Yes, FloCard is available on Android and iOS, enabling card creation, sharing, messaging, and climate tracking on-the-go.",
+    "metadata": {
+      "category": "app",
+      "source": "flocard_appstore",
+      "recency": 2025,
+      "priority": 3
+    }
+  },
+  {
+    "id": "56",
+    "text": "How does FloCard verify tree planting? Partnered with vetted reforestation groups, FloCard logs tree data via blockchain so that users can transparently view their climate contributions.",
+    "metadata": {
+      "category": "transparency",
+      "source": "flocard_faq",
+      "recency": 2025,
+      "priority": 5
+    }
+  },
+  {
+    "id": "57",
+    "text": "Can I use FloCard without technical knowledge? Yes. The interface is beginner-friendly, no coding or blockchain experience needed. Creating and sharing a card takes less than 2 minutes.",
+    "metadata": {
+      "category": "usability",
+      "source": "flocard_faq",
+      "recency": 2025,
+      "priority": 3
+    }
+  },
+  {
+    "id": "58",
+    "text": "What does the FloCard ecosystem include? The platform includes personal cards, team cards, Flip messaging, climate analytics, community dashboards, and SDG-linked reporting tools.",
+    "metadata": {
+      "category": "ecosystem",
+      "source": "flocard_marketplace",
+      "recency": 2025,
+      "priority": 4
+    }
+  },
+  {
+    "id": "59",
+    "text": "Does FloCard support global reforestation? Yes. It partners with multiple NGOs to plant trees across Asia, Africa, and Latin America, with plans to scale globally.",
+    "metadata": {
+      "category": "sustainability",
+      "source": "flocard_partners",
+      "recency": 2025,
+      "priority": 5
+    }
+  },
+  {
+    "id": "60",
+    "text": "What are future features planned for FloCard? Upcoming features include wallet integrations, smart contact syncing, embeddable widgets, web3 login, and community carbon credit trading.",
+    "metadata": {
+      "category": "roadmap",
+      "source": "flocard_about",
+      "recency": 2025,
+      "priority": 4
+    }
+  },
+  {
+    "id": "61",
+    "text": "FloCard is a digital business card app that goes beyond just networking - it's an ecosystem that supports sustainable development goals, climate action, and sustainability. By using FloCard, you can align your business with these important values and showcase your commitment to a better future.",
+    "metadata": {
+      "category": "introduction",
+      "source": "faq_data",
+      "recency": 2025,
+      "priority": 1
+    }
+  },
+  {
+    "id": "62",
+    "text": "Full Stack Coding Assignment: Real-Time Collaborative To-Do Board Objective Build a web-based collaborative to-do board application where multiple users can log in, manage tasks, and see changes happen in real time\u2014similar to a minimal Trello board but with live sync and some custom business logic. Assignment Brief 1. Backend (Node.js/Express + MongoDB or PHP + MySQL) \u2022 User Registration & Login: Secure sign-up/login with hashed passwords and JWT-based authentication. \u2022 Task API: Tasks have title, description, assigned user, status (Todo, In Progress, Done), and priority. \u2022 Real-Time Sync: Implement real-time updates using WebSockets (e.g., Socket.IO for Node.js) so all users see changes instantly. \u2022 Action Logging: Every change (add/edit/delete/assign/drag-drop) should be logged with who did what, when. Expose a REST API to fetch the last 20 actions. \u2022 Conflict Handling: If two users edit the same task at the same time, detect the conflict and prompt both users to resolve (see details below). 2. Frontend (React, no UI template libraries) \u2022 Login/Register Pages: Custom-built forms (do not use Bootstrap or any form generator). \u2022 Kanban Board: Three columns: Todo, In Progress, Done. ",
+    "metadata": {
+      "filename": "Assignment_MERN.pdf",
+      "uploaded_at": "2025-07-11T06:08:08",
+      "category": "PDF Upload",
+      "recency": 2025,
+      "priority": 5
+    }
+  },
+  {
+    "id": "63",
+    "text": "Tasks can be dragged and dropped between columns and reassigned to any user. \u2022 Activity Log Panel: Shows last 20 actions; updates live. \u2022 Unique UI: Custom styling only\u2014no third-party CSS frameworks. \u2022 Animations: At least one custom animation (e.g., card flip, smooth drag-drop, etc.). \u2022 Responsiveness: The app should work well on both desktop and mobile screens. 3. Unique Logic Challenges \u2022 Smart Assign: Add a \u201cSmart Assign\u201d button\u2014when clicked on a task, it assigns the task to the user with the fewest current active tasks. You must implement this logic yourself. \u2022 Conflict Handling: If two users edit the same task at the same time, show both versions and let users choose to \u201cmerge\u201d or \u201coverwrite.\u201d \u2022 Validation: Task titles must be unique per board, and must not match column names. Submission & Deployment Instructions 1. GitHub Repository \u25e6 Create a public GitHub repository for your project. \u25e6 Make regular, meaningful commits showing your work and progress. \u25e6 Include a detailed README.md with: \u25aa Project overview \u25aa Tech stack used \u25aa Setup and installation instructions (how to run both backend and frontend locally) \u25aa Features list and usage guide \u25aa Explanations for your Smart Assign",
+    "metadata": {
+      "filename": "Assignment_MERN.pdf",
+      "uploaded_at": "2025-07-11T06:08:08",
+      "category": "PDF Upload",
+      "recency": 2025,
+      "priority": 5
+    }
+  },
+  {
+    "id": "64",
+    "text": " and Conflict Handling logic \u25aa Link to your deployed live app and demo video 2. Live Deployment \u25e6 Deploy both backend and frontend to a free hosting service. \u25aa Frontend: Vercel, Netlify, or similar \u25aa Backend: Render, Railway, Cyclic, Heroku, or similar (Node.js/MongoDB recommended) \u25e6 Make sure your deployed app is accessible and works for demonstration. \u25e6 Include all necessary environment variable setup instructions in your README (do not share secrets or private keys). 3. Demo Video \u25e6 Record a 5\u201310 minute screen recording with voiceover (Loom, Zoom, OBS, or similar tools are fine). \u25aa Brief intro to your project and tech stack \u25aa Show login/register, Kanban features, real-time sync, Smart Assign, and conflict resolution \u25aa Highlight your favorite part or the most challenging part \u25e6 Upload your video to Google Drive, YouTube (unlisted), Loom, or any accessible platform. \u25e6 Include the video link in your README. 4. Logic Document \u25e6 Create a 1-page PDF or Markdown file titled Logic_Document.pdf or Logic_Document.md explaining: \u25aa How you implemented Smart Assign (in your own words, not code) \u25aa How your conflict handling works, with examples if possible 5. Final Submission \u25e6 Submit the fol",
+    "metadata": {
+      "filename": "Assignment_MERN.pdf",
+      "uploaded_at": "2025-07-11T06:08:08",
+      "category": "PDF Upload",
+      "recency": 2025,
+      "priority": 5
+    }
+  },
+  {
+    "id": "65",
+    "text": "lowing via the Internshala portal (in the assignment submission section): \u25aa The GitHub repository link \u25aa The deployed app URL \u25aa The demo video link \u25aa The logic document (uploaded as PDF/Markdown, or a link to it in your repo) \u25e6 Make sure all links are accessible and permissions are set for viewing. Deadline Submit all requirements on the Internshala portal by: 11:59 PM IST, 7 days from the date you receive this assignment",
+    "metadata": {
+      "filename": "Assignment_MERN.pdf",
+      "uploaded_at": "2025-07-11T06:08:08",
+      "category": "PDF Upload",
+      "recency": 2025,
+      "priority": 5
+    }
+  },
+  {
+    "id": "66",
+    "text": "Full Stack Coding Assignment: Real-Time Collaborative To-Do Board Objective Build a web-based collaborative to-do board application where multiple users can log in, manage tasks, and see changes happen in real time\u2014similar to a minimal Trello board but with live sync and some custom business logic. Assignment Brief 1. Backend (Node.js/Express + MongoDB or PHP + MySQL) \u2022 User Registration & Login: Secure sign-up/login with hashed passwords and JWT-based authentication. \u2022 Task API: Tasks have title, description, assigned user, status (Todo, In Progress, Done), and priority. \u2022 Real-Time Sync: Implement real-time updates using WebSockets (e.g., Socket.IO for Node.js) so all users see changes instantly. \u2022 Action Logging: Every change (add/edit/delete/assign/drag-drop) should be logged with who did what, when. Expose a REST API to fetch the last 20 actions. \u2022 Conflict Handling: If two users edit the same task at the same time, detect the conflict and prompt both users to resolve (see details below). 2. Frontend (React, no UI template libraries) \u2022 Login/Register Pages: Custom-built forms (do not use Bootstrap or any form generator). \u2022 Kanban Board: Three columns: Todo, In Progress, Done. ",
+    "metadata": {
+      "filename": "Assignment_MERN.pdf",
+      "uploaded_at": "2025-07-11T06:08:26",
+      "category": "PDF Upload",
+      "recency": 2025,
+      "priority": 5
+    }
+  },
+  {
+    "id": "67",
+    "text": "Tasks can be dragged and dropped between columns and reassigned to any user. \u2022 Activity Log Panel: Shows last 20 actions; updates live. \u2022 Unique UI: Custom styling only\u2014no third-party CSS frameworks. \u2022 Animations: At least one custom animation (e.g., card flip, smooth drag-drop, etc.). \u2022 Responsiveness: The app should work well on both desktop and mobile screens. 3. Unique Logic Challenges \u2022 Smart Assign: Add a \u201cSmart Assign\u201d button\u2014when clicked on a task, it assigns the task to the user with the fewest current active tasks. You must implement this logic yourself. \u2022 Conflict Handling: If two users edit the same task at the same time, show both versions and let users choose to \u201cmerge\u201d or \u201coverwrite.\u201d \u2022 Validation: Task titles must be unique per board, and must not match column names. Submission & Deployment Instructions 1. GitHub Repository \u25e6 Create a public GitHub repository for your project. \u25e6 Make regular, meaningful commits showing your work and progress. \u25e6 Include a detailed README.md with: \u25aa Project overview \u25aa Tech stack used \u25aa Setup and installation instructions (how to run both backend and frontend locally) \u25aa Features list and usage guide \u25aa Explanations for your Smart Assign",
+    "metadata": {
+      "filename": "Assignment_MERN.pdf",
+      "uploaded_at": "2025-07-11T06:08:26",
+      "category": "PDF Upload",
+      "recency": 2025,
+      "priority": 5
+    }
+  },
+  {
+    "id": "68",
+    "text": " and Conflict Handling logic \u25aa Link to your deployed live app and demo video 2. Live Deployment \u25e6 Deploy both backend and frontend to a free hosting service. \u25aa Frontend: Vercel, Netlify, or similar \u25aa Backend: Render, Railway, Cyclic, Heroku, or similar (Node.js/MongoDB recommended) \u25e6 Make sure your deployed app is accessible and works for demonstration. \u25e6 Include all necessary environment variable setup instructions in your README (do not share secrets or private keys). 3. Demo Video \u25e6 Record a 5\u201310 minute screen recording with voiceover (Loom, Zoom, OBS, or similar tools are fine). \u25aa Brief intro to your project and tech stack \u25aa Show login/register, Kanban features, real-time sync, Smart Assign, and conflict resolution \u25aa Highlight your favorite part or the most challenging part \u25e6 Upload your video to Google Drive, YouTube (unlisted), Loom, or any accessible platform. \u25e6 Include the video link in your README. 4. Logic Document \u25e6 Create a 1-page PDF or Markdown file titled Logic_Document.pdf or Logic_Document.md explaining: \u25aa How you implemented Smart Assign (in your own words, not code) \u25aa How your conflict handling works, with examples if possible 5. Final Submission \u25e6 Submit the fol",
+    "metadata": {
+      "filename": "Assignment_MERN.pdf",
+      "uploaded_at": "2025-07-11T06:08:26",
+      "category": "PDF Upload",
+      "recency": 2025,
+      "priority": 5
+    }
+  },
+  {
+    "id": "69",
+    "text": "lowing via the Internshala portal (in the assignment submission section): \u25aa The GitHub repository link \u25aa The deployed app URL \u25aa The demo video link \u25aa The logic document (uploaded as PDF/Markdown, or a link to it in your repo) \u25e6 Make sure all links are accessible and permissions are set for viewing. Deadline Submit all requirements on the Internshala portal by: 11:59 PM IST, 7 days from the date you receive this assignment",
+    "metadata": {
+      "filename": "Assignment_MERN.pdf",
+      "uploaded_at": "2025-07-11T06:08:26",
+      "category": "PDF Upload",
+      "recency": 2025,
+      "priority": 5
+    }
+  },
+  {
+    "id": "70",
+    "text": "Full Stack Coding Assignment: Real-Time Collaborative To-Do Board Objective Build a web-based collaborative to-do board application where multiple users can log in, manage tasks, and see changes happen in real time\u2014similar to a minimal Trello board but with live sync and some custom business logic. Assignment Brief 1. Backend (Node.js/Express + MongoDB or PHP + MySQL) \u2022 User Registration & Login: Secure sign-up/login with hashed passwords and JWT-based authentication. \u2022 Task API: Tasks have title, description, assigned user, status (Todo, In Progress, Done), and priority. \u2022 Real-Time Sync: Implement real-time updates using WebSockets (e.g., Socket.IO for Node.js) so all users see changes instantly. \u2022 Action Logging: Every change (add/edit/delete/assign/drag-drop) should be logged with who did what, when. Expose a REST API to fetch the last 20 actions. \u2022 Conflict Handling: If two users edit the same task at the same time, detect the conflict and prompt both users to resolve (see details below). 2. Frontend (React, no UI template libraries) \u2022 Login/Register Pages: Custom-built forms (do not use Bootstrap or any form generator). \u2022 Kanban Board: Three columns: Todo, In Progress, Done. ",
+    "metadata": {
+      "filename": "Assignment_MERN.pdf",
+      "uploaded_at": "2025-07-11T06:08:50",
+      "category": "PDF Upload",
+      "recency": 2025,
+      "priority": 5
+    }
+  },
+  {
+    "id": "71",
+    "text": "Tasks can be dragged and dropped between columns and reassigned to any user. \u2022 Activity Log Panel: Shows last 20 actions; updates live. \u2022 Unique UI: Custom styling only\u2014no third-party CSS frameworks. \u2022 Animations: At least one custom animation (e.g., card flip, smooth drag-drop, etc.). \u2022 Responsiveness: The app should work well on both desktop and mobile screens. 3. Unique Logic Challenges \u2022 Smart Assign: Add a \u201cSmart Assign\u201d button\u2014when clicked on a task, it assigns the task to the user with the fewest current active tasks. You must implement this logic yourself. \u2022 Conflict Handling: If two users edit the same task at the same time, show both versions and let users choose to \u201cmerge\u201d or \u201coverwrite.\u201d \u2022 Validation: Task titles must be unique per board, and must not match column names. Submission & Deployment Instructions 1. GitHub Repository \u25e6 Create a public GitHub repository for your project. \u25e6 Make regular, meaningful commits showing your work and progress. \u25e6 Include a detailed README.md with: \u25aa Project overview \u25aa Tech stack used \u25aa Setup and installation instructions (how to run both backend and frontend locally) \u25aa Features list and usage guide \u25aa Explanations for your Smart Assign",
+    "metadata": {
+      "filename": "Assignment_MERN.pdf",
+      "uploaded_at": "2025-07-11T06:08:50",
+      "category": "PDF Upload",
+      "recency": 2025,
+      "priority": 5
+    }
+  },
+  {
+    "id": "72",
+    "text": " and Conflict Handling logic \u25aa Link to your deployed live app and demo video 2. Live Deployment \u25e6 Deploy both backend and frontend to a free hosting service. \u25aa Frontend: Vercel, Netlify, or similar \u25aa Backend: Render, Railway, Cyclic, Heroku, or similar (Node.js/MongoDB recommended) \u25e6 Make sure your deployed app is accessible and works for demonstration. \u25e6 Include all necessary environment variable setup instructions in your README (do not share secrets or private keys). 3. Demo Video \u25e6 Record a 5\u201310 minute screen recording with voiceover (Loom, Zoom, OBS, or similar tools are fine). \u25aa Brief intro to your project and tech stack \u25aa Show login/register, Kanban features, real-time sync, Smart Assign, and conflict resolution \u25aa Highlight your favorite part or the most challenging part \u25e6 Upload your video to Google Drive, YouTube (unlisted), Loom, or any accessible platform. \u25e6 Include the video link in your README. 4. Logic Document \u25e6 Create a 1-page PDF or Markdown file titled Logic_Document.pdf or Logic_Document.md explaining: \u25aa How you implemented Smart Assign (in your own words, not code) \u25aa How your conflict handling works, with examples if possible 5. Final Submission \u25e6 Submit the fol",
+    "metadata": {
+      "filename": "Assignment_MERN.pdf",
+      "uploaded_at": "2025-07-11T06:08:50",
+      "category": "PDF Upload",
+      "recency": 2025,
+      "priority": 5
+    }
+  },
+  {
+    "id": "73",
+    "text": "lowing via the Internshala portal (in the assignment submission section): \u25aa The GitHub repository link \u25aa The deployed app URL \u25aa The demo video link \u25aa The logic document (uploaded as PDF/Markdown, or a link to it in your repo) \u25e6 Make sure all links are accessible and permissions are set for viewing. Deadline Submit all requirements on the Internshala portal by: 11:59 PM IST, 7 days from the date you receive this assignment",
+    "metadata": {
+      "filename": "Assignment_MERN.pdf",
+      "uploaded_at": "2025-07-11T06:08:50",
+      "category": "PDF Upload",
+      "recency": 2025,
+      "priority": 5
+    }
+  },
+  {
+    "id": "74",
+    "text": "1. Integraton of mcp servers with chromadb: The MCP-Chroma server provides an interface for working with ChromaDB, a vector database for embeddings. It allows you to manage collections and documents through a set of tools using the Model-Controller-Protocol (MCP) interface. link: https://chatgpt.com/c/684faea3-ad14-800c-9775-65f0a6d15134 2. Pros and cons of vector dbs 3.Use FAISS only if: You have very large datasets (millions of vectors),You need blazing fast search speeds, You don\u2019t need metadata filtering, You're comfortable managing index persistence manually",
+    "metadata": {
+      "filename": "Info366pi.txt",
+      "uploaded_at": "2025-07-11T06:08:50",
+      "category": "PDF Upload",
+      "recency": 2025,
+      "priority": 5
+    }
+  },
+  {
+    "id": "75",
+    "text": "A non-procedural language is a type of programming language where the user specifies what the program should accomplish without detailing how to achieve it, allowing the underlying system to determine the execution process.\nCharacteristics of Non-Procedural Languages\nDeclarative Approach: Non-procedural languages, also known as declarative languages, focus on defining the desired outcomes rather than the specific steps to reach those outcomes. This approach allows for more concise and expressive code \n2\n.\nFunction Development: These languages enable the creation of complex functions from simpler, existing functions. This means that coding is often shorthand for specifying relationships, constraints, or operations \n2\n.\nSimplicity: The semantics of non-procedural languages tend to be simpler compared to procedural languages. This simplicity can lead to improved readability and easier maintenance of code \n2\n.\nAutomatic Optimization: The underlying systems can often optimize execution automatically, which helps in achieving better performance without requiring manual optimization by the developer \n1\n.\n\n\n4 Sources\nExamples of Non-Procedural Languages\nSQL (Structured Query Language): Used for managing and querying relational databases, SQL allows users to request data without needing to specify the exact retrieval method.\nLISP: A language primarily used in artificial intelligence, known for its symbolic expression capabilities and functional programming features.\nPROLOG: A logic programming language that emphasizes the use of rules and facts to perform logical inference \n2\n.\n\n\n2 Sources\nAdvantages of Non-Procedural Languages\nHigher Productivity: Since these languages allow developers to focus on what needs to be done rather than how to do it, they can often produce results more quickly and efficiently.\nEnhanced Readability: The focus on outcomes makes non-procedural code easier to read and understand, even for those unfamiliar with the original code \n2\n.\nEasier Maintenance: Non-procedural languages often lead to less complex code, which reduces the likelihood of bugs and makes maintenance simpler \n2\n.\n\n\n3 Sources\nConclusion\nNon-procedural languages represent a significant departure from traditional procedural programming paradigms. By focusing on the end goal rather than the means of achieving it, these languages enable developers to write more abstract, efficient, and maintainable code. They are particularly useful in scenarios where the requirements can be clearly defined without needing to delve into implementation details.\nThese features make non-procedural languages an excellent choice for specific applications, particularly in database management, artificial intelligence, and high-level data manipulation tasks.",
+    "metadata": {
+      "category": "account",
+      "source": "faq_data",
+      "recency": 2025,
+      "priority": 5,
+      "uploaded_at": "2025-07-11T06:33:18"
+    }
+  },
+  {
+    "id": "76",
+    "text": "Python is a high-level, general-purpose programming language known for its readability and simplicity. It was created by Guido van Rossum and first released in 1991. Python supports multiple programming paradigms, including procedural, object-oriented, and functional programming.\n\nKey Features\n\nPython is dynamically typed and garbage-collected, making it flexible and easy to use. It has a simple syntax that is similar to the English language, which allows developers to write programs with fewer lines of code compared to other programming languages. Python's design philosophy emphasizes code readability, using significant indentation to define code blocks.\n\nUses and Applications\n\nPython is widely used in various fields due to its versatility and extensive libraries. Some common applications include:\n\nWeb Development: Python can be used to create web applications using frameworks like Django and Flask.\n\nData Science: Python is popular in data science for building AI models, data analysis, and machine learning using libraries like TensorFlow, Keras, and scikit-learn.\n\nAutomation: Python can automate tasks such as web scraping and data manipulation using libraries like BeautifulSoup and pandas.\n\nGame Development: Python can be used to develop 2D and 3D games using libraries like Pygame.\n\nCAD: Python can be used for computer-aided design (CAD) to create 2D and 3D models.\n\nAdvantages and Disadvantages\n\nAdvantages\n\nEasy to Learn: Python's syntax is simple and easy to understand, making it a great choice for beginners\n3\n.\n\nVersatile: Python can be used for various applications, from web development to data science\n3\n.\n\nExtensive Libraries: Python has a vast collection of libraries and frameworks that simplify development\n3\n.\n\nStrong Community: Python has a large and active community that provides support and resources\n3\n.\n\nDisadvantages\n\nPerformance: Python is slower in execution compared to some other programming languages due to its interpreted nature\n3\n.\n\nMemory Inefficiency: Python can be memory inefficient, which can be a drawback for certain applications\n3\n.\n\nWeak Mobile Computing: Python is not the best choice for mobile computing\n3\n.\n\nConclusion\n\nPython is a powerful and versatile programming language that is widely used in various fields. Its simplicity and readability make it an excellent choice for both beginners and experienced developers. Despite some limitations, Python's extensive libraries and strong community support make it a popular choice for many applications",
+    "metadata": {
+      "category": "information",
+      "source": "faq_data",
+      "recency": 2025,
+      "priority": 5,
+      "uploaded_at": "2025-07-11T06:41:38"
+    }
+  },
+  {
+    "id": "77",
+    "text": "SUMMARY Cybersecurity Analyst Job Simulation \u2013 Forage (Tata) | June 2025 Completed hands-on tasks in IAM fundamentals, custom IAM strategy design, and platform integration, simulating real-world cybersecurity analyst responsibilities. HTML5 \u2013 Infosys Springboard (2024) Completed comprehensive training covering HTML5 structure, semantic tags, forms, multimedia integration, and best practices for modern web development. Cloud Computing with AWS \u2013 Internshala (6-week Online Training) Completed training covering core AWS services like EC2, S3, VPC, IAM, databases, security, pricing, and deployed a final project using AWS architecture principles. Sarala Birla University, Ranchi Bachelors in Computer Applications(2021-24) CGPA - 6.84 Amity University Jharkhand Masters of Computer Applications(MCA) 2024 - Present CGPA - 7.64 June 2025 - Present(On-site) AI Engineer Intern , 366Pi Technologies (Ranchi, Jharkhand) Built an AI-powered semantic search app using RAG architecture with Python, Streamlit, and ChromaDB. Generated text embeddings using Sentence Transformers for vector similarity search with cosine distance. Ingested and indexed PDF/JSON data into ChromaDB, enabling context-aware do",
+    "metadata": {
+      "filename": "Joyjeet_cv.pdf",
+      "uploaded_at": "2025-07-11T06:45:23",
+      "category": "PDF Upload",
+      "recency": 2025,
+      "priority": 5
+    }
+  },
+  {
+    "id": "78",
+    "text": "cument retrieval. MCA student with a strong foundation in web technologies and a growing interest in AI-driven applications. Skilled in Java, HTML, CSS, JavaScript, MySQL, and PHP, with hands-on project experience. Currently building an AI assistant using Python, Streamlit, and ChromaDB for semantic search and knowledge retrieval. Certified in Cryptography, Cloud Computing, and Next Gen Technologies. Eager to contribute to innovative projects and explore opportunities in AI and software development. JOYJEET ROY Ranchi, Jharkhand | joyjeetroy04@gmail.com | LinkedIn - joyjeetroy04 STUDENT TECHNICAL SKILLS PROFESSIONAL EXPERIENCE EDUCATION CERTIFICATIONS HTML CSS JAVA Bootstrap Python Vector Databases AWS StreamLit GitHub MS Office MySQL Web Development Debugging and troubleshooting Communication Learning agility Team collaboration SOFT SKILLS ADDITIONAL INFORMATION Languages - Hindi, English & Bangla Activities - Volunteer for TechHive at Amity University Jharkhand, Virtual Volunteer at Pawzz, NGO(Delhi) Participations : Actively on Unstop, check LinkedIn)",
+    "metadata": {
+      "filename": "Joyjeet_cv.pdf",
+      "uploaded_at": "2025-07-11T06:45:23",
+      "category": "PDF Upload",
+      "recency": 2025,
+      "priority": 5
+    }
+  },
+  {
+    "id": "79",
+    "text": "SUMMARY Cybersecurity Analyst Job Simulation \u2013 Forage (Tata) | June 2025 Completed hands-on tasks in IAM fundamentals, custom IAM strategy design, and platform integration, simulating real-world cybersecurity analyst responsibilities. HTML5 \u2013 Infosys Springboard (2024) Completed comprehensive training covering HTML5 structure, semantic tags, forms, multimedia integration, and best practices for modern web development. Cloud Computing with AWS \u2013 Internshala (6-week Online Training) Completed training covering core AWS services like EC2, S3, VPC, IAM, databases, security, pricing, and deployed a final project using AWS architecture principles. Sarala Birla University, Ranchi Bachelors in Computer Applications(2021-24) CGPA - 6.84 Amity University Jharkhand Masters of Computer Applications(MCA) 2024 - Present CGPA - 7.64 June 2025 - Present(On-site) AI Engineer Intern , 366Pi Technologies (Ranchi, Jharkhand) Built an AI-powered semantic search app using RAG architecture with Python, Streamlit, and ChromaDB. Generated text embeddings using Sentence Transformers for vector similarity search with cosine distance. Ingested and indexed PDF/JSON data into ChromaDB, enabling context-aware do",
+    "metadata": {
+      "filename": "Joyjeet_cv.pdf",
+      "uploaded_at": "2025-07-11T06:45:35",
+      "category": "PDF Upload",
+      "recency": 2025,
+      "priority": 5
+    }
+  },
+  {
+    "id": "80",
+    "text": "cument retrieval. MCA student with a strong foundation in web technologies and a growing interest in AI-driven applications. Skilled in Java, HTML, CSS, JavaScript, MySQL, and PHP, with hands-on project experience. Currently building an AI assistant using Python, Streamlit, and ChromaDB for semantic search and knowledge retrieval. Certified in Cryptography, Cloud Computing, and Next Gen Technologies. Eager to contribute to innovative projects and explore opportunities in AI and software development. JOYJEET ROY Ranchi, Jharkhand | joyjeetroy04@gmail.com | LinkedIn - joyjeetroy04 STUDENT TECHNICAL SKILLS PROFESSIONAL EXPERIENCE EDUCATION CERTIFICATIONS HTML CSS JAVA Bootstrap Python Vector Databases AWS StreamLit GitHub MS Office MySQL Web Development Debugging and troubleshooting Communication Learning agility Team collaboration SOFT SKILLS ADDITIONAL INFORMATION Languages - Hindi, English & Bangla Activities - Volunteer for TechHive at Amity University Jharkhand, Virtual Volunteer at Pawzz, NGO(Delhi) Participations : Actively on Unstop, check LinkedIn)",
+    "metadata": {
+      "filename": "Joyjeet_cv.pdf",
+      "uploaded_at": "2025-07-11T06:45:35",
+      "category": "PDF Upload",
+      "recency": 2025,
+      "priority": 5
+    }
+  },
+  {
+    "id": "81",
+    "text": "SUMMARY Cybersecurity Analyst Job Simulation \u2013 Forage (Tata) | June 2025 Completed hands-on tasks in IAM fundamentals, custom IAM strategy design, and platform integration, simulating real-world cybersecurity analyst responsibilities. HTML5 \u2013 Infosys Springboard (2024) Completed comprehensive training covering HTML5 structure, semantic tags, forms, multimedia integration, and best practices for modern web development. Cloud Computing with AWS \u2013 Internshala (6-week Online Training) Completed training covering core AWS services like EC2, S3, VPC, IAM, databases, security, pricing, and deployed a final project using AWS architecture principles. Sarala Birla University, Ranchi Bachelors in Computer Applications(2021-24) CGPA - 6.84 Amity University Jharkhand Masters of Computer Applications(MCA) 2024 - Present CGPA - 7.64 June 2025 - Present(On-site) AI Engineer Intern , 366Pi Technologies (Ranchi, Jharkhand) Built an AI-powered semantic search app using RAG architecture with Python, Streamlit, and ChromaDB. Generated text embeddings using Sentence Transformers for vector similarity search with cosine distance. Ingested and indexed PDF/JSON data into ChromaDB, enabling context-aware do",
+    "metadata": {
+      "filename": "Joyjeet_cv.pdf",
+      "uploaded_at": "2025-07-11T06:45:55",
+      "category": "PDF Upload",
+      "recency": 2025,
+      "priority": 5
+    }
+  },
+  {
+    "id": "82",
+    "text": "cument retrieval. MCA student with a strong foundation in web technologies and a growing interest in AI-driven applications. Skilled in Java, HTML, CSS, JavaScript, MySQL, and PHP, with hands-on project experience. Currently building an AI assistant using Python, Streamlit, and ChromaDB for semantic search and knowledge retrieval. Certified in Cryptography, Cloud Computing, and Next Gen Technologies. Eager to contribute to innovative projects and explore opportunities in AI and software development. JOYJEET ROY Ranchi, Jharkhand | joyjeetroy04@gmail.com | LinkedIn - joyjeetroy04 STUDENT TECHNICAL SKILLS PROFESSIONAL EXPERIENCE EDUCATION CERTIFICATIONS HTML CSS JAVA Bootstrap Python Vector Databases AWS StreamLit GitHub MS Office MySQL Web Development Debugging and troubleshooting Communication Learning agility Team collaboration SOFT SKILLS ADDITIONAL INFORMATION Languages - Hindi, English & Bangla Activities - Volunteer for TechHive at Amity University Jharkhand, Virtual Volunteer at Pawzz, NGO(Delhi) Participations : Actively on Unstop, check LinkedIn)",
+    "metadata": {
+      "filename": "Joyjeet_cv.pdf",
+      "uploaded_at": "2025-07-11T06:45:55",
+      "category": "PDF Upload",
+      "recency": 2025,
+      "priority": 5
+    }
+  },
+  {
+    "id": "83",
+    "text": "Project Overview You will learn and implement semantic search using vector embeddings and vector databases. The project guides you from the basics of embeddings, through hands-on experience with vector databases, to building an AI-powered search engine using RAG (Retrieval-Augmented Generation). Project Phases & Task Breakdown Phase 1: Fundamentals of Vector Search & Embeddings Goal: Understand the building blocks\u2014embeddings and vector databases. 1.1 \u2013 Explore Embedding Tools: Try out libraries like OpenAI, HuggingFace, and sentence-transformers for generating embeddings from text. 1.2 \u2013 Similarity Search Concepts: Learn about cosine similarity. Understand dense vs. sparse retrieval approaches. 1.3 \u2013 Practice Embedding Generation: Run sample scripts to create and inspect embeddings. 1.4 \u2013 Vector DB Comparison Table: Research and compare FAISS, Chroma, Qdrant, Weaviate. Make a table summarizing features, pros/cons, and setup experience. 1.5 \u2013 Hands-on with a Vector DB: Install Chroma (or similar) locally. Insert 5\u201310 text samples. Run and observe similarity search (cosine distance). Phase 2: Implement Simple Vector Search Pipeline Goal: Build a functional search system with embeddin",
+    "metadata": {
+      "filename": "Project Overview.txt",
+      "uploaded_at": "2025-07-11T06:45:55",
+      "category": "PDF Upload",
+      "recency": 2025,
+      "priority": 5
+    }
+  },
+  {
+    "id": "84",
+    "text": "gs. 2.1 \u2013 Choose Dataset: Pick a simple dataset (FAQs, product descriptions, or blog summaries). 2.2 \u2013 Generate Embeddings: Use a model like all-MiniLM-L6-v2 to turn text into embeddings. 2.3 \u2013 Store Embeddings in Vector DB: Insert dataset into the chosen vector DB (Chroma or FAISS). 2.4 \u2013 Build Query Interface: Create a CLI or web API where a user can enter a query. Return the most similar chunk(s) using vector search. Phase 3: Build a Simple AI Search App (with RAG) Goal: Integrate LLMs and build a user-facing semantic search app. 3.1 \u2013 LLM Integration: On query, fetch top 3 similar chunks from vector DB. Send these as context to an LLM (OpenAI, OpenRouter, or HuggingFace) to generate an answer. 3.2 \u2013 Streamlit/Gradio Interface: Build a simple UI for search: user asks a question, app shows matched chunk(s), original context, and LLM-generated response. 3.3 \u2013 Improve User Experience: Support markdown formatting, copy-to-clipboard, collapsible context, etc. Phase 4: Enhance & Optimize Goal: Add advanced features and quality improvements. 4.1 \u2013 Metadata Filtering: Enable filtering results by category, source, or tags in the vector DB. 4.2 \u2013 Re-ranking: Combine semantic score with ot",
+    "metadata": {
+      "filename": "Project Overview.txt",
+      "uploaded_at": "2025-07-11T06:45:55",
+      "category": "PDF Upload",
+      "recency": 2025,
+      "priority": 5
+    }
+  },
+  {
+    "id": "85",
+    "text": "her factors (recency, priority) for top-K results. 4.3 \u2013 Feedback Logging: Log user queries and LLM responses for analysis and feedback. 4.4 \u2013 Embedding Visualization (Optional): Export embeddings for t-SNE/UMAP plots to visualize clustering. Phase 5: Documentation, Use Cases, Extensions Goal: Summarize learning, enable reproducibility, explore real-world applications. 5.1 \u2013 Detailed README: Cover what vector DBs are, how AI search works, and reproducibility instructions. 5.2 \u2013 Comparison Chart: Summarize vector DBs (install commands, query samples). 5.3 \u2013 Add More Data: Ingest a larger dataset (e.g., Wikipedia summaries or FloCard features) for richer demo. 5.4 \u2013 Suggest FloCard Use Cases: Propose how this tech can power search, contact memory, FAQs, etc., in FloCard. Expected Outcome By the end of this project, you\u2019ll have: Hands-on experience with vector embeddings and databases. A functional RAG-based search engine with a basic UI. Comparative knowledge of vector DBs. Documented, reproducible code and workflow. Insights into real-world applications for business/product. Tip: Work through each phase in order\u2014each builds upon the previous. Take screenshots and brief notes as you ",
+    "metadata": {
+      "filename": "Project Overview.txt",
+      "uploaded_at": "2025-07-11T06:45:55",
+      "category": "PDF Upload",
+      "recency": 2025,
+      "priority": 5
+    }
+  },
+  {
+    "id": "86",
+    "text": "go; they\u2019ll help in the final documentation and for sharing learnings in reviews or demos.",
+    "metadata": {
+      "filename": "Project Overview.txt",
+      "uploaded_at": "2025-07-11T06:45:55",
+      "category": "PDF Upload",
+      "recency": 2025,
+      "priority": 5
+    }
+  },
+  {
+    "id": "87",
+    "text": "SUMMARY Cybersecurity Analyst Job Simulation \u2013 Forage (Tata) | June 2025 Completed hands-on tasks in IAM fundamentals, custom IAM strategy design, and platform integration, simulating real-world cybersecurity analyst responsibilities. HTML5 \u2013 Infosys Springboard (2024) Completed comprehensive training covering HTML5 structure, semantic tags, forms, multimedia integration, and best practices for modern web development. Cloud Computing with AWS \u2013 Internshala (6-week Online Training) Completed training covering core AWS services like EC2, S3, VPC, IAM, databases, security, pricing, and deployed a final project using AWS architecture principles. Sarala Birla University, Ranchi Bachelors in Computer Applications(2021-24) CGPA - 6.84 Amity University Jharkhand Masters of Computer Applications(MCA) 2024 - Present CGPA - 7.64 June 2025 - Present(On-site) AI Engineer Intern , 366Pi Technologies (Ranchi, Jharkhand) Built an AI-powered semantic search app using RAG architecture with Python, Streamlit, and ChromaDB. Generated text embeddings using Sentence Transformers for vector similarity search with cosine distance. Ingested and indexed PDF/JSON data into ChromaDB, enabling context-aware do",
+    "metadata": {
+      "filename": "Joyjeet_cv.pdf",
+      "uploaded_at": "2025-07-11T06:51:01",
+      "category": "PDF Upload",
+      "recency": 2025,
+      "priority": 5
+    }
+  },
+  {
+    "id": "88",
+    "text": "cument retrieval. MCA student with a strong foundation in web technologies and a growing interest in AI-driven applications. Skilled in Java, HTML, CSS, JavaScript, MySQL, and PHP, with hands-on project experience. Currently building an AI assistant using Python, Streamlit, and ChromaDB for semantic search and knowledge retrieval. Certified in Cryptography, Cloud Computing, and Next Gen Technologies. Eager to contribute to innovative projects and explore opportunities in AI and software development. JOYJEET ROY Ranchi, Jharkhand | joyjeetroy04@gmail.com | LinkedIn - joyjeetroy04 STUDENT TECHNICAL SKILLS PROFESSIONAL EXPERIENCE EDUCATION CERTIFICATIONS HTML CSS JAVA Bootstrap Python Vector Databases AWS StreamLit GitHub MS Office MySQL Web Development Debugging and troubleshooting Communication Learning agility Team collaboration SOFT SKILLS ADDITIONAL INFORMATION Languages - Hindi, English & Bangla Activities - Volunteer for TechHive at Amity University Jharkhand, Virtual Volunteer at Pawzz, NGO(Delhi) Participations : Actively on Unstop, check LinkedIn)",
+    "metadata": {
+      "filename": "Joyjeet_cv.pdf",
+      "uploaded_at": "2025-07-11T06:51:01",
+      "category": "PDF Upload",
+      "recency": 2025,
+      "priority": 5
+    }
+  },
+  {
+    "id": "89",
+    "text": "Joyjeet Roy Student Phone: +91 9098193879 Email: joyjeetroy04@gmail.com Github: joyjeetroy04 Linkedin:joyjeetroy04 CONTACT CGPA: 6.84 EDUCATION Master of Computer Applications Bachelor of Computer Applications Amity University Jharkhand | 2024-2026 Sarala Birla University,Ranchi | 2021-2024 Vishwadeep Senior Secondary School | 2019-2021 78.4% Commerce +Informatics Practices SKILLS WEB DEVELOPMENT : HTML ,CSS ,JAVASCRIPT FRAMEWORKS : BOOTSRAP ,REACT JS,PHP DATABASES : MYSQL CLI ,MYSQL WORKBENCH MICROSOFT OFFICE : MS WORD ,MS POWER POINT TALLY PRIME AMAZON WEB SERVICES(AWS) PROJECTS Motivated and detail-oriented MCA student proficient in Java, HTML, CSS, MySQL, and PHP. Passionate about problem-solving, learning new technologies, and developing scalable and efficient software solutions. Seeking an opportunity as a Software Developer to apply technical skills, contribute to innovative projects, and grow in a dynamic environment. CERTIFICATES SSCP Cryptography | 2025 The Infosys Springboard HTML Advanced | 2024 The Infosys Springboard Next Gen Technologies | 2024 The Infosys Springboard Cloud Computing with AWS | 2023 Schooliverse Educare Private Limited Address: Ranchi,Jharkhand(India",
+    "metadata": {
+      "filename": "Joyjeet_Resume.pdf",
+      "uploaded_at": "2025-07-11T06:55:45",
+      "category": "PDF Upload",
+      "recency": 2025,
+      "priority": 5
+    }
+  },
+  {
+    "id": "90",
+    "text": ") ShowFolio: Built using Html ,Css ,Js & MySql for presenting portfolio seamlessly. Password Generator : Built using Html,Css&Js for generating strong passwords. DoxyCoffee: For presenting Coffee appetizing .Built using Html ,Swiper and Js Flappy Bird Game : Challenging webgame built on Html ,Css &Js .",
+    "metadata": {
+      "filename": "Joyjeet_Resume.pdf",
+      "uploaded_at": "2025-07-11T06:55:45",
+      "category": "PDF Upload",
+      "recency": 2025,
+      "priority": 5
+    }
+  },
+  {
+    "id": "91",
+    "text": "Joyjeet Roy Student Phone: +91 9098193879 Email: joyjeetroy04@gmail.com Github: joyjeetroy04 Linkedin:joyjeetroy04 CONTACT CGPA: 6.84 EDUCATION Master of Computer Applications Bachelor of Computer Applications Amity University Jharkhand | 2024-2026 Sarala Birla University,Ranchi | 2021-2024 Vishwadeep Senior Secondary School | 2019-2021 78.4% Commerce +Informatics Practices SKILLS WEB DEVELOPMENT : HTML ,CSS ,JAVASCRIPT FRAMEWORKS : BOOTSRAP ,REACT JS,PHP DATABASES : MYSQL CLI ,MYSQL WORKBENCH MICROSOFT OFFICE : MS WORD ,MS POWER POINT TALLY PRIME AMAZON WEB SERVICES(AWS) PROJECTS Motivated and detail-oriented MCA student proficient in Java, HTML, CSS, MySQL, and PHP. Passionate about problem-solving, learning new technologies, and developing scalable and efficient software solutions. Seeking an opportunity as a Software Developer to apply technical skills, contribute to innovative projects, and grow in a dynamic environment. CERTIFICATES SSCP Cryptography | 2025 The Infosys Springboard HTML Advanced | 2024 The Infosys Springboard Next Gen Technologies | 2024 The Infosys Springboard Cloud Computing with AWS | 2023 Schooliverse Educare Private Limited Address: Ranchi,Jharkhand(India",
+    "metadata": {
+      "filename": "Joyjeet_Resume.pdf",
+      "uploaded_at": "2025-07-11T06:55:55",
+      "category": "PDF Upload",
+      "recency": 2025,
+      "priority": 5
+    }
+  },
+  {
+    "id": "92",
+    "text": ") ShowFolio: Built using Html ,Css ,Js & MySql for presenting portfolio seamlessly. Password Generator : Built using Html,Css&Js for generating strong passwords. DoxyCoffee: For presenting Coffee appetizing .Built using Html ,Swiper and Js Flappy Bird Game : Challenging webgame built on Html ,Css &Js .",
+    "metadata": {
+      "filename": "Joyjeet_Resume.pdf",
+      "uploaded_at": "2025-07-11T06:55:55",
+      "category": "PDF Upload",
+      "recency": 2025,
+      "priority": 5
+    }
+  },
+  {
+    "id": "93",
+    "text": "Dear Hiring Team, I am writing to express my interest in joining your esteemed GitCareer program. As a passionate and driven MCA student with a strong foundation in full-stack development and cloud technologies, I am eager to contribute to innovative software solutions in Japan\u2019s dynamic tech ecosystem. During my academic journey, I\u2019ve built multiple projects using Java, PHP, MySQL, HTML/CSS, and React. Currently, I am developing a semantic AI assistant using Retrieval-Augmented Generation (RAG), ChromaDB, and Hugging Face Transformers, which has sharpened my understanding of modern AI-powered search systems. This experience reflects my eagerness to explore cutting-edge technologies beyond the classroom. What draws me to GitCareer is your mission to connect global developers with Japan's leading tech companies. I admire the opportunity to work in a culturally diverse and high-precision environment, and I am fully open to relocation, learning Japanese, and growing alongside expert engineers. I have attached my resume and would welcome the opportunity to further discuss how my skills and current learning journey align with your global hiring vision. Thank you for your time and consid",
+    "metadata": {
+      "filename": "CoverLetter.pdf",
+      "uploaded_at": "2025-07-11T09:07:03",
+      "category": "PDF Upload",
+      "recency": 2025,
+      "priority": 5
+    }
+  },
+  {
+    "id": "94",
+    "text": "eration. Sincerely, Joyjeet Roy",
+    "metadata": {
+      "filename": "CoverLetter.pdf",
+      "uploaded_at": "2025-07-11T09:07:03",
+      "category": "PDF Upload",
+      "recency": 2025,
+      "priority": 5
+    }
+  }
+]
