@@ -1,303 +1,37 @@
 [
   {
-    "question": "how flocaed enhances security?",
-    "answer": "The platform includes personal cards, team cards, Flip messaging, climate analytics, community dashboards, and SDG-linked reporting tools.",
-    "helpful": "\ud83d\udc4e No",
-    "comment": "",
-    "timestamp": "2025-06-30 13:46:05.013187"
-  },
-  {
-    "question": "how flocaed enhances security?",
-    "answer": "The platform includes personal cards, team cards, Flip messaging, climate analytics, community dashboards, and SDG-linked reporting tools.",
-    "helpful": "\ud83d\udc4d Yes",
-    "comment": "irrelevant response",
-    "timestamp": "2025-06-30 13:54:33.964219"
-  },
-  {
-    "timestamp": "2025-06-30T14:19:11.161921",
-    "user_query": "what is flocard",
-    "ai_answer": "The platform includes personal cards, team cards, Flip messaging, climate analytics, community dashboards, and SDG-linked reporting tools.",
-    "helpful": "\ud83d\udc4e No",
-    "comment": "not helpful"
-  },
-  {
-    "question": "how flocaed enhances security?",
-    "answer": "The platform includes personal cards, team cards, Flip messaging, climate analytics, community dashboards, and SDG-linked reporting tools.",
-    "helpful": "\ud83d\udc4d Yes",
-    "comment": "hi!",
-    "timestamp": "2025-06-30 14:21:34.019564"
-  },
-  {
-    "timestamp": "2025-06-30T19:51:17.616802",
-    "user_query": "how is sustainility achieved?",
-    "ai_answer": "Wish I could help you more",
-    "helpful": "\ud83d\udc4d Yes",
-    "comment": "N/A"
-  },
-  {
-    "question": "changing profile picture ",
-    "answer": "iii.",
-    "helpful": "\ud83d\udc4e No",
-    "comment": "N/A",
-    "timestamp": "2025-06-30T19:54:45.127882"
-  },
-  {
-    "question": "how flocaed enhances security?",
-    "answer": "You can also update your password from the 'Security' section in your profile settings",
-    "helpful": "\ud83d\udc4e No",
-    "comment": "bakwas output",
-    "timestamp": "2025-06-30T20:32:48.258039"
-  },
-  {
-    "question": "how is sustainility achieved?",
-    "answer": "Visit the Help Center and use the live chat option to connect with a support agent instantly",
-    "helpful": "\ud83d\udc4e No",
-    "comment": "N/A",
-    "timestamp": "2025-06-30T21:08:08.857756"
-  },
-  {
-    "timestamp": "2025-06-30T21:29:05.168622",
-    "user_query": "how flocard contributes sustainibilitty",
-    "ai_answer": "Yes. It partners with multiple NGOs to plant trees across Asia, Africa, and Latin America, with plans to scale globally.",
-    "helpful": "\ud83d\udc4e No",
-    "comment": "N/A"
-  },
-  {
-    "question": "how flocard impacts enviourment?",
-    "answer": "'Security' section in your profile settings. Click on your profile, go to 'Security Settings', and update your password from there. To change your account email, go to 'Account Settings' and select 'Change Email'. Follow the prompts to verify your new email address.",
-    "helpful": "\ud83d\udc4e No",
-    "comment": "irrelevant answer",
-    "timestamp": "2025-07-01T08:56:23.134393"
-  },
-  {
-    "question": "how flocard impacts enviourment? ",
-    "answer": "It partners with multiple NGOs to plant trees across Asia, Africa, and Latin America, with plans to scale globally",
-    "helpful": "\ud83d\udc4d Yes",
-    "comment": "i expect a lil brief answer",
-    "timestamp": "2025-07-01T09:06:02.348350"
-  },
-  {
-    "question": "how can flocard enhance in future",
-    "answer": "Upcoming features include wallet integrations, smart contact syncing, embeddable widgets, web3 login, and community carbon credit trading",
-    "helpful": "\ud83d\udc4d Yes",
-    "comment": "wow thats great",
-    "timestamp": "2025-07-01T09:08:02.476029"
-  },
-  {
-    "timestamp": "2025-07-01T09:38:31.972038",
-    "question": "how can flocard later enhance its skills?",
-    "answer": "Upcoming features include wallet integrations, smart contact syncing, embeddable widgets, web3 login, and community carbon credit trading.",
-    "helpful": "\ud83d\udc4e No",
-    "comment": "i think it should be detailed"
-  },
-  {
-    "timestamp": "2025-07-01T09:52:53.717253",
-    "question": "how flocard enhances security?",
-    "answer": "The platform includes personal cards, team cards, Flip messaging, climate analytics, community dashboards, and SDG-linked reporting tools.",
-    "helpful": "\ud83d\udc4d Yes",
-    "comment": "answer should be brief"
-  },
-  {
-    "timestamp": "2025-07-01T10:48:03.403447",
-    "question": "how do i earn flocard coins",
-    "answer": "by inviting friends. Share your referral code found in 'Settings' > 'Referral'. Redeem your Flocoins by visiting the 'Redeem' tab and selecting offers like canteen discounts, merchandise, or vouchers.",
-    "helpful": "\ud83d\udc4e No",
-    "comment": "but it could have been more precise"
-  },
-  {
-    "timestamp": "2025-07-01T10:51:13.310918",
-    "question": "email id of flocard",
-    "answer": "support@flocard.com",
-    "helpful": "\ud83d\udc4d Yes",
-    "comment": "N/A"
-  },
-  {
-    "timestamp": "2025-07-03T11:51:28.276287",
-    "question": "whats your name?",
-    "answer": "Flocard's privacy settings allow you to control who can see your profile and activities. Adjust these in 'Settings' > 'Privacy'.",
-    "helpful": "\ud83d\udc4e No",
-    "comment": "N/A"
-  },
-  {
-    "timestamp": "2025-07-03T11:54:49.970482",
-    "question": "how is flocard gaining profits",
-    "answer": "Earn more by engaging in daily activities and exclusive events.",
-    "helpful": "\ud83d\udc4d Yes",
-    "comment": "N/A"
-  },
-  {
-    "timestamp": "2025-07-04T13:04:05.617411",
-    "question": "what are vectors",
-    "answer": "Output: ||A|| and ||B|| are the length (Euclidean norm) of a vector from the distance of origin to the point represented by the vector. Example, if a vector A = [a1, a2, an] and Vector B= [b1, b2, bn] then; A. B= a1*b1+ a2*b2+...+ an*bn \u2022 ||A|| and ||B|| are the length (Euclidean norm) of a vector from the distance of origin to the point represented by the vector. Example, if a vector A = [a1, a2, an] and Vector B= [b1, b2, bn] then; A. B= a1*b1+ a2*b2+...+ an*bn \u2022 ||A|| and ||B|| are the length (Euclidean norm) of a vector from the distance of origin to the point represented by the vector. Example, if a vector A = [a1, a2, an] and Vector B",
-    "helpful": "\ud83d\udc4e No",
-    "comment": "N/A"
-  },
-  {
-    "timestamp": "2025-07-04T15:07:08.557476",
-    "question": "what is cosine similarity",
-    "answer": "Cosine similarity is a measure of the distance between two points in a vector space.",
-    "helpful": "\ud83d\udc4e No",
-    "comment": "N/A"
-  },
-  {
-    "timestamp": "2025-07-04T15:09:30.845001",
-    "question": "what are vector databases",
-    "answer": "Vector databases are a type of database used to store and retrieve data from a variety of sources.",
-    "helpful": "\ud83d\udc4e No",
-    "comment": "answer is fine but context cant be seen"
-  },
-  {
-    "timestamp": "2025-07-06T19:22:50.386743",
-    "question": "what is cosine similarity",
-    "answer": "Cosine similarity is a measure of the distance between two points in a vector space.",
-    "helpful": "\ud83d\udc4d Yes",
-    "comment": "answe came but no contexts"
-  },
-  {
-    "timestamp": "2025-07-06T14:24:20",
-    "question": "what are vector databases",
-    "answer": "vector databases",
-    "rating": 3,
-    "comment": "the contexts are to be  shown"
-  },
-  {
-    "timestamp": "2025-07-07T03:51:15",
-    "question": "what is weaviate",
-    "answer": "an open-source vector database with built-in machine learning capabilities and RESTful/GraphQL APIs",
-    "helpful": "\ud83d\udc4d Yes",
-    "comment": "N/A"
-  },
-  {
-    "timestamp": "2025-07-07T04:31:16",
-    "question": "what is weaviate",
-    "answer": "an open-source vector database with built-in machine learning capabilities and RESTful/GraphQL APIs",
-    "helpful": "\ud83d\udc4d Yes",
-    "comment": "nice output"
-  },
-  {
-    "timestamp": "2025-07-07T06:44:20+00:00",
-    "user_query": "what is flocard//",
-    "ai_answer": "FloCard is a sustainable digital identity platform that replaces paper business cards with dynamic, blockchain-backed digital profiles",
-    "feedback": "\ud83d\udc4d",
-    "comment": ""
-  },
-  {
-    "timestamp": "2025-07-07T06:52:08",
-    "question": "how to create account",
-    "answer": "I don't know",
-    "helpful": "\ud83d\udc4e No",
-    "comment": "N/A"
-  },
-  {
-    "timestamp": "2025-07-07T07:58:18+00:00",
-    "user_query": "what is cosine similarity in short",
-    "ai_answer": "Output: Cosine similarity is a way to find out how similar two things are when we are comparing texts or data. Cosine similarity it only looks at their direction and tells us how much two things are pointing in the same direction, irrespective of there distance from each other.",
+    "timestamp": "2025-07-17T05:38:09+00:00",
+    "user_query": "flocard usecases",
+    "ai_answer": "Here are the key use cases for Flocard based on the provided context:\n\n1. **For Professionals & Entrepreneurs**  \n   - **Networking Efficiency:** Share digital cards instantly at meetings or conferences via QR code, NFC, or link.  \n   - **Branding:** Customize cards with logos, colors, and social media links.  \n   - **Always Updated:** No need to reprint cards when contact details change.  \n\n2. **For Sales & Marketing Teams**  \n   - **Lead Generation:** Track who viewed your card and follow up efficiently.  \n   - **CRM Integration:** Sync card interactions with CRM tools for streamlined workflows.  \n\n3. **For Event Networking**  \n   - Quickly exchange contact details without physical cards.  \n\n4. **For Recruiters & Job Seekers**  \n   - Share dynamic profiles with real-time updates.  \n\n5. **For Educational Institutions**  \n   - Facilitate networking among students, faculty, or alumni.  \n\nFlocard also offers analytics, cross-platform compatibility (iPhone/Android), and secure data handling. Let me know if you'd like details on a specific use case!",
     "feedback": "\ud83d\udc4d Yes",
-    "comment": "N/A"
+    "comment": "it was helpful"
   },
   {
-    "timestamp": "2025-07-07T07:59:34+00:00",
-    "user_query": "what is weaviate",
-    "ai_answer": "an open-source vector database with built-in machine learning capabilities and RESTful/GraphQL APIs",
-    "feedback": "\ud83d\udc4d Yes",
-    "comment": "nice output"
-  },
-  {
-    "timestamp": "2025-07-07T08:13:03+00:00",
-    "user_query": "what is qdrant",
-    "ai_answer": "I don't know",
-    "feedback": "\ud83d\udc4d Yes",
-    "comment": "even if the data is available it is not giving output"
-  },
-  {
-    "timestamp": "2025-07-08T06:24:22+00:00",
-    "user_query": "what is magnetic field",
-    "ai_answer": "A magnetic field exists in the region surrounding a magnet, in which the force of the magnet can be detected.",
+    "timestamp": "2025-07-17T05:40:49+00:00",
+    "user_query": "flocard",
+    "ai_answer": "Flocard is a digital business card platform designed to replace physical business cards. It allows users to create, customize, and share contact information seamlessly through QR codes, NFC, or links. Key features include real-time updates, interaction analytics, and integrations with CRM and email tools.  \n\n**Use Cases:**  \n- **Professionals & Entrepreneurs:** Efficient networking, branding customization, and no need for reprints when details change.  \n- **Sales & Marketing Teams:** Lead generation by tracking card views and follow-ups.  \n\n**FAQs Highlights:**  \n- **Security:** Uses encryption and GDPR-compliant data handling.  \n- **Updates:** Changes sync automatically after sharing.  \n- **Compatibility:** Works on both iPhone and Android.  \n- **Pricing:** Offers a free plan with basic features; paid plans include analytics and CRM integrations.  \n\nLet me know if you'd like details on a specific aspect!",
     "feedback": "\ud83d\udc4e No",
-    "comment": "N/A"
+    "comment": "not useful"
   },
   {
-    "timestamp": "2025-07-08T06:36:15",
-    "user_query": "what is weaviate",
-    "ai_answer": "an open-source vector database with built-in machine learning capabilities and RESTful/GraphQL APIs",
+    "timestamp": "2025-07-17T06:05:22+00:00",
+    "user_query": "how to secure account",
+    "ai_answer": "Based on the provided context, an account can be secured through an authenticator. No further details are available in the current documents. \n\nIf you need specific steps for setting up an authenticator, I couldn't find that information here. Let me know if you'd like me to check other sources.",
     "feedback": "\ud83d\udc4d Yes",
-    "comment": "No Comments"
+    "comment": "model needs training"
   },
   {
-    "timestamp": "2025-07-08T06:54:34+00:00",
-    "user_query": "what is the summary of chapter 9",
-    "ai_answer": "I don't know",
-    "feedback": "\ud83d\udc4e No",
-    "comment": "No Comments"
-  },
-  {
-    "timestamp": "2025-07-08T07:49:42+00:00",
-    "user_query": "how flocaed enhances security?",
-    "ai_answer": "uses encryption and secure servers to protect your data",
+    "timestamp": "2025-07-17T06:56:54+00:00",
+    "user_query": "how to prevent covid",
+    "ai_answer": "To prevent COVID-19, you can take the following measures based on the provided context:  \n\n1. **Avoid direct contact with animals and surfaces** in live animal markets, and practice good food safety.  \n2. **Handle raw meat, milk, or animal organs carefully** to avoid contaminating uncooked foods, and avoid consuming raw or undercooked animal products.  \n3. **Clean your hands frequently and thoroughly** to protect yourself from droplets produced when an infected person coughs, sneezes, or speaks.  \n4. **Stay informed** about the latest COVID-19 updates from reliable sources like the WHO or local health authorities.  \n5. **Avoid ineffective/harmful measures** such as smoking, wearing multiple masks, or taking antibiotics (as they do not prevent or cure COVID-19).  \n\nFor additional precautions, follow official guidelines from health authorities.",
     "feedback": "\ud83d\udc4d Yes",
-    "comment": "a lil more detailed answer is expected"
+    "comment": "it was helpful"
   },
   {
-    "timestamp": "2025-07-08T07:59:04+00:00",
-    "user_query": "what is cosine similarity",
-    "ai_answer": "Cosine similarity is a way to find out how similar two things are when we are comparing texts or data. Cosine similarity it only looks at their direction and tells us how much two things are pointing in the same direction, irrespective of there distance from each other. In simple words, it is similar to asking, \u201cDo these two people have the same idea, even if they say it differently?\u201d It\u2019s widely used in AI, machine learning, text analysis, and recommendation systems, especially when comparing two texts or items. How is It Used?",
-    "feedback": "\ud83d\udc4e No",
-    "comment": "answer is ccorrect but i see no intelligence"
-  },
-  {
-    "timestamp": "2025-07-08T09:40:22+00:00",
-    "user_query": "key features of flocard",
-    "ai_answer": "Upcoming features include wallet integrations, smart contact syncing, embeddable widgets, web3 login, and community carbon credit trading.",
-    "feedback": "\ud83d\udc4e No",
-    "comment": "cool"
-  },
-  {
-    "timestamp": "2025-07-11T05:21:20+00:00",
-    "user_query": "how to reset password",
-    "ai_answer": "Tap on 'Forgot Password' on the login screen and follow the email instructions to reset it",
+    "timestamp": "2025-07-17T07:09:52+00:00",
+    "user_query": "one laptop under 50000",
+    "ai_answer": "Based on the provided context, here is one laptop under $500 (though the context doesn't specify currency, assuming USD based on typical laptop pricing):\n\n**Acer TravelMate B117-M**  \n- Price: $269.0  \n- Type: Netbook  \n- Screen Size: 11.6 inches  \n- RAM: 4GB  \n- Storage: 32GB Flash Storage  \n- Processor: Intel Celeron Dual Core N3050 (1.6GHz)  \n- OS: Windows 10  \n\nLet me know if you'd like details on other options under $500.",
     "feedback": "\ud83d\udc4d Yes",
-    "comment": "nice but it should be a lil explaining "
-  },
-  {
-    "timestamp": "2025-07-11T05:34:53+00:00",
-    "user_query": "what is cosine similarity",
-    "ai_answer": "Cosine similarity is a way to find out how similar two things are when we are comparing texts or data. Cosine similarity it only looks at their direction and tells us how much two things are pointing in the same direction, irrespective of there distance from each other. In simple words, it is similar to asking, \u201cDo these two people have the same idea, even if they say it differently?\u201d",
-    "feedback": "\ud83d\udc4d Yes",
-    "comment": "nice loved it"
-  },
-  {
-    "timestamp": "2025-07-11T05:46:00+00:00",
-    "user_query": "how does flocard impacts ones life?",
-    "ai_answer": "It empowers users with a digital-first identity, boosts credibility, reduces paper waste, and gives every professional a way to contribute to sustainability with minimal effort.",
-    "feedback": "\ud83d\udc4d Yes",
-    "comment": "N/A"
-  },
-  {
-    "timestamp": "2025-07-11T06:44:34+00:00",
-    "user_query": "what is python and its features?",
-    "ai_answer": "Python is a high-level, general-purpose programming language known for its readability and simplicity. It was created by Guido van Rossum and first released in 1991. Python supports multiple programming paradigms, including procedural, object-oriented, and functional programming. Key Features Python is dynamically typed and garbage-collected, making it flexible and easy to use. It has a simple syntax that is similar to the English language, which allows developers to write programs with fewer lines of code compared to other programming languages.",
-    "feedback": "\ud83d\udc4d Yes",
-    "comment": "nice sync"
-  },
-  {
-    "timestamp": "2025-07-11T07:43:59+00:00",
-    "user_query": "what is cosine similarity",
-    "ai_answer": "Cosine similarity is a way to find out how similar two things are when we are comparing texts or data. Cosine similarity it only looks at their direction and tells us how much two things are pointing in the same direction, irrespective of there distance from each other. In simple words, it is similar to asking, \u201cDo these two people have the same idea, even if they say it differently?\u201d It\u2019s widely used in AI, machine learning, text analysis, and recommendation systems, especially when comparing two texts or items.",
-    "feedback": "\ud83d\udc4d Yes",
-    "comment": "N/A"
-  },
-  {
-    "timestamp": "2025-07-11T08:47:26+00:00",
-    "user_query": "what is cosine similarity",
-    "ai_answer": "Cosine similarity is a way to find out how similar two things are when we are comparing texts or data. Cosine similarity it only looks at their direction and tells us how much two things are pointing in the same direction, irrespective of there distance from each other. In simple words, it is similar to asking, \u201cDo these two people have the same idea, even if they say it differently?\u201d It\u2019s widely used in AI, machine learning, text analysis, and recommendation systems, especially when comparing two texts or items.",
-    "feedback": "\ud83d\udc4d Yes",
-    "comment": "nice ui tho"
-  },
-  {
-    "timestamp": "2025-07-11T08:59:56+00:00",
-    "user_query": "how to reset password",
-    "ai_answer": "Forgot your Flocard password? Tap on 'Forgot Password' on the login screen and follow the email instructions to reset it.",
-    "feedback": "\ud83d\udc4d Yes",
-    "comment": "nice loved it"
+    "comment": "okay cool"
   }
 ]

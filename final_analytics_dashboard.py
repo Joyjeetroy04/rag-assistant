@@ -1,5 +1,9 @@
 # final_analytics_dashboard.py – Enhanced UI Version
 from __future__ import annotations
+
+import hashlib  # ← Add this at top of your file (once)
+
+
 import json, uuid, re
 from datetime import datetime, timezone
 from pathlib import Path
@@ -11,9 +15,12 @@ import altair as alt
 from sentence_transformers import SentenceTransformer
 import torch
 import pytesseract
+from helpers import clean_and_tag
 
-from faq_dashboard_with_creator import clean_and_tag
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+
+
+
 
 # ── Paths ──────────────────────────────────────────────────────────
 BASE_DIR         = Path(__file__).parent
@@ -24,11 +31,14 @@ UPLOAD_LOG_FILE  = BASE_DIR / "upload_log.json"
 FAQ_JSON_FILE    = BASE_DIR / "flocard_faq.json"
 CHROMA_DIR       = BASE_DIR / "chroma_ui_storage"
 COLL_NAME        = "week3_collection"
+STORE = CHROMA_DIR
+
 
 # ── Helpers ─────────────────────────────────────────────────────────
 def now_iso() -> str:
     return datetime.now(timezone.utc).replace(tzinfo=None).isoformat(timespec="seconds")
-
+def generate_id(text: str) -> str:
+    return "ul_" + hashlib.sha256(text.encode("utf-8")).hexdigest()[:16]
 def load_json(path: Path) -> list[dict]:
     if not path.exists():
         return []
@@ -80,7 +90,18 @@ for f in feedback:
         f["timestamp"] = now_iso()
 
 # ── Vector DB connection ────────────────────────────────────────────
-embedder  = SentenceTransformer("all-MiniLM-L6-v2", device="cpu") #sentence transformer for embeddings
+from sentence_transformers import models, SentenceTransformer
+import torch
+
+model_name = "sentence-transformers/all-MiniLM-L6-v2"
+
+# Manually load to avoid meta tensor issue
+word_model = models.Transformer(model_name)
+pooling = models.Pooling(word_model.get_word_embedding_dimension())
+
+embedder = SentenceTransformer(modules=[word_model, pooling])
+embedder.to(torch.device("cpu"))  # ✅ Safe and supported
+ #sentence transformer for embeddings
 #all minilm-l6-v2 is a lightweight model suitable for many tasks and used here for generating embeddings
 client    = chromadb.PersistentClient(path=str(CHROMA_DIR))
 collection = client.get_or_create_collection(COLL_NAME)
@@ -133,7 +154,7 @@ with st.container():
 st.markdown("---")
 
 # ── Upload Section ──────────────────────────────────────────────────
-with st.expander("📂 Upload New Knowledge", expanded=False):
+with st.expander("📂 Upload New Knowledge", expanded=True):
     u_files = st.file_uploader(
         "Drag & drop files here (PDF, TXT, CSV, Excel, JSON, DOCX, PPTX)",
         accept_multiple_files=True,
@@ -142,26 +163,45 @@ with st.expander("📂 Upload New Knowledge", expanded=False):
     )
 
     def extract_text(file) -> str | list[dict] | None:
-        import fitz, docx
+        import pdfplumber, fitz, docx
         from pptx import Presentation
         from PIL import Image
         import pytesseract, io
+        import pandas as pd
 
         ext = file.name.split(".")[-1].lower()
-        
+
         try:
             if ext == "pdf":
-                doc = fitz.open(stream=file.read(), filetype="pdf")
                 texts = []
-                for page in doc:
-                    text = page.get_text("text").strip()
-                    if not text:
-                        pix = page.get_pixmap(dpi=300)
-                        img = Image.open(io.BytesIO(pix.tobytes("png")))
-                        text = pytesseract.image_to_string(img)
-                    texts.append(text)
+
+                # Step 1: Try using pdfplumber (best for text-based PDFs)
+                try:
+                    with pdfplumber.open(io.BytesIO(file.read())) as pdf:
+                        for page in pdf.pages:
+                            text = page.extract_text()
+                            if text:
+                                texts.append(text)
+                except Exception as e:
+                    st.warning(f"⚠️ pdfplumber failed: {str(e)[:100]}")
+
+                # Step 2: If no text extracted, use PyMuPDF + Tesseract OCR
+                if not texts:
+                    file.seek(0)  # reset file pointer
+                    doc = fitz.open(stream=file.read(), filetype="pdf")
+                    for page in doc:
+                        text = page.get_text("text").strip()
+                        
+                        text = "\n".join(b[4].strip() for b in text if b[4].strip())
+                        if not text:
+                            pix = page.get_pixmap(dpi=300)
+                            img = Image.open(io.BytesIO(pix.tobytes("png")))
+                            text = pytesseract.image_to_string(img)
+                        if text.strip():
+                            texts.append(text)
+
                 return "\n".join(texts)
-            
+
             elif ext == "txt":
                 return file.read().decode("utf-8", "ignore")
 
@@ -174,6 +214,7 @@ with st.expander("📂 Upload New Knowledge", expanded=False):
 
             elif ext == "docx":
                 d = docx.Document(file)
+                
                 return "\n".join(p.text for p in d.paragraphs if p.text.strip())
 
             elif ext == "pptx":
@@ -184,111 +225,168 @@ with st.expander("📂 Upload New Knowledge", expanded=False):
                 return json.load(file)
 
         except Exception as e:
-            st.error(f"❌ Error processing {file.name}: {str(e)[:200]}...")
+            st.error(f"❌ Error extracting text from {file.name}: {str(e)[:300]}")
             return None
+
 
     def chunk_text(txt: str, size=1200) -> list[str]:
         txt = re.sub(r"\s+", " ", txt.strip())
         return [txt[i:i+size] for i in range(0, len(txt), size)]
 
-    if u_files and st.button("🚀 Push to Vector DB", type="primary"):
-        progress_bar = st.progress(0)
-        status_text = st.empty()
-        new_rec, faq_entries = [], []
+if u_files and st.button("🚀 Push to Vector DB", type="primary"):
+    progress_bar = st.progress(0)
+    status_text = st.empty()
+    new_rec, faq_entries = [], []
+
+    for i, uf in enumerate(u_files):
+        progress = (i + 1) / len(u_files)
+        progress_bar.progress(progress)
+        status_text.text(f"Processing {i+1}/{len(u_files)}: {uf.name}")
+
+        with st.spinner(f"Extracting text from {uf.name}"):
+            raw = extract_text(uf)
+
+        if not raw:
+            st.warning(f"⚠️ No text extracted from {uf.name}")
+            continue
+
+        existing_ids = set(collection.get()["ids"])
+
+        # Case 1: JSON with structured text entries
+        if isinstance(raw, list) and all("text" in r for r in raw):
+            final_chunks, ids, metas = [], [], []
+
+            for r in raw:
+                text = str(r["text"]).strip()
+                if len(text) < 30:
+                    continue
+                cid = r.get("id", generate_id(text))
+                if cid in existing_ids:
+                    continue
+                meta = r.get("metadata", {}) or {}
+                meta.update({
+                    "filename": uf.name,
+                    "uploaded_at": now_iso()
+                })
+                ids.append(cid)
+                final_chunks.append(text)
+                metas.append(meta)
+                faq_entries.append({"text": text, "metadata": meta})
+
+            if final_chunks:
+                embeds = embedder.encode(final_chunks).tolist()
+                collection.add(documents=final_chunks, ids=ids, embeddings=embeds, metadatas=metas)
+                new_rec.append({
+                    "timestamp": now_iso(),
+                    "filename": uf.name,
+                    "size_kb": round(len(uf.getvalue()) / 1024, 2),
+                    "chunks": len(final_chunks),
+                    "deleted_at": ""
+                })
+                st.success(f"✅ {uf.name}: {len(final_chunks)} structured chunks inserted")
+            continue  # Done with JSON case
+
+        # Case 2: Plain text content
+        chunks = chunk_text(str(raw))
+        if not chunks:
+            st.warning(f"⚠️ {uf.name}: no extractable text")
+            continue
+
+        # Prepare metadata per chunk
+        metas_all = [{
+            "filename": uf.name,
+            "uploaded_at": now_iso(),
+            "category": "PDF Upload",
+            "recency": datetime.now().year,
+            "priority": 5
+        } for _ in chunks]
+
+        # Filter out duplicates
+        ids, final_chunks, metas_filtered = [], [], []
+        skipped = 0
+
+        for chunk, meta in zip(chunks, metas_all):
+            cid = generate_id(chunk)
+            if cid not in existing_ids:
+                ids.append(cid)
+                final_chunks.append(chunk)
+                metas_filtered.append(meta)
+            else:
+                skipped += 1
+
+        if not final_chunks:
+            st.info(f"⏭ All chunks from {uf.name} already exist in Vector DB")
+            continue
+
+        # Encode and insert
+        if final_chunks:
+    # Refresh latest IDs just before adding
+          existing_ids = set(collection.get()["ids"])
+
+    # Prepare new chunks that are not duplicates
+    docs_to_add, ids_to_add, metas_to_add = [], [], []
+    embeds_to_add = []
+
+    for chunk, cid, meta in zip(final_chunks, ids, metas_filtered):
+        if cid in existing_ids:
+            continue
+        docs_to_add.append(chunk)
+        ids_to_add.append(cid)
+        metas_to_add.append(meta)
+        embeds_to_add.append([float(x) for x in embedder.encode([chunk])[0]])  # ✅ convert to native floats
+
+    if not ids_to_add:
+        st.info(f"⏭ All chunks from {uf.name} are already in the Vector DB.")
+    else:
+        collection.add(
+            documents=docs_to_add,
+            ids=ids_to_add,
+            embeddings=embeds_to_add,
+            metadatas=metas_to_add
+        )
+        st.success(f"✅ {uf.name}: {len(docs_to_add)} chunks inserted.")
+
+        # Upload log
+        new_rec.append({
+            "timestamp": now_iso(),
+            "filename": uf.name,
+            "size_kb": round(len(uf.getvalue()) / 1024, 2),
+            "chunks": len(docs_to_add),
+            "deleted_at": ""
+        })
+
+        faq_entries += [{"text": doc, "metadata": meta} for doc, meta in zip(docs_to_add, metas_to_add)]
+
+
+
+        # Record in upload log
+        new_rec.append({
+            "timestamp": now_iso(),
+            "filename": uf.name,
+            "size_kb": round(len(uf.getvalue()) / 1024, 2),
+            "chunks": len(final_chunks),
+            "deleted_at": ""
+        })
+
+        # Update FAQ list
+        faq_entries += [{"text": chunk, "metadata": meta} for chunk, meta in zip(final_chunks, metas_filtered)]
+
+        if skipped:
+            st.info(f"⏭ Skipped {skipped} duplicate chunks in {uf.name}")
+
+    progress_bar.empty()
+    status_text.empty()
+
+    if new_rec:
+        uploads.extend(new_rec)
+        save_json(UPLOAD_LOG_FILE, uploads)
+        if faq_entries:
+            append_to_faq_json(faq_entries)
+            (STORE / "reload.flag").write_text(now_iso())
+        st.success("✅ All files processed successfully!")
+        st.balloons()
         
-        for i, uf in enumerate(u_files):
-            progress = (i + 1) / len(u_files)
-            progress_bar.progress(progress)
-            status_text.text(f"Processing {i+1}/{len(u_files)}: {uf.name}")
-            
-            with st.spinner(f"Extracting text from {uf.name}"):
-                raw = extract_text(uf)
-            
-            if not raw:
-                st.warning(f"⚠️ No text extracted from {uf.name}")
-                continue
-
-            if isinstance(raw, list) and all("text" in r for r in raw):
-                final_chunks, ids, metas = [], [], []
-                existing_ids = set(collection.get()["ids"])
-
-                for r in raw:
-                    text = str(r["text"]).strip()
-                    if len(text) < 30:
-                        continue
-                    cid = r.get("id", f"ul_{uuid.uuid4().hex[:8]}")
-                    if cid in existing_ids:
-                        continue
-                    meta = r.get("metadata", {}) or {}
-                    meta.update({
-                        "filename": uf.name,
-                        "uploaded_at": now_iso()
-                    })
-                    ids.append(cid)
-                    final_chunks.append(text)
-                    metas.append(meta)
-                    faq_entries.append({"text": text, "metadata": meta})
-
-                if final_chunks:
-                    embeds = embedder.encode(final_chunks).tolist()
-                    collection.add(documents=final_chunks, ids=ids, embeddings=embeds, metadatas=metas)
-                    new_rec.append({
-                        "timestamp": now_iso(),
-                        "filename": uf.name,
-                        "size_kb": round(len(uf.getvalue()) / 1024, 2),
-                        "chunks": len(final_chunks),
-                        "deleted_at": ""
-                    })
-                    st.success(f"✅ {uf.name}: {len(final_chunks)} structured chunks inserted")
-                continue
-
-            chunks = chunk_text(str(raw))
-            if not chunks:
-                st.warning(f"⚠️ {uf.name}: no extractable text")
-                continue
-            
-            existing_ids = set(collection.get()["ids"])
-            ids, final_chunks = [], []
-
-            for i, chunk in enumerate(chunks):
-                cid = f"ul_{uuid.uuid4().hex[:8]}_{i}"
-                if cid not in existing_ids:
-                    ids.append(cid)
-                    final_chunks.append(chunk)
-
-            if not final_chunks:
-                continue
-
-            embeds = embedder.encode(final_chunks).tolist()
-            metas = [{
-                "filename": uf.name,
-                "uploaded_at": now_iso(),
-                "category": "PDF Upload",
-                "recency": datetime.now().year,
-                "priority": 5
-            }] * len(final_chunks)
-
-            collection.add(documents=final_chunks, ids=ids, embeddings=embeds, metadatas=metas)
-            new_rec.append({
-                "timestamp": now_iso(),
-                "filename": uf.name,
-                "size_kb": round(len(uf.getvalue()) / 1024, 2),
-                "chunks": len(final_chunks),
-                "deleted_at": ""
-            })
-            faq_entries += [{"text": chunk, "metadata": meta} for chunk, meta in zip(final_chunks, metas)]
-
-        progress_bar.empty()
-        status_text.empty()
-        
-        if new_rec:
-            uploads.extend(new_rec)
-            save_json(UPLOAD_LOG_FILE, uploads)
-            if faq_entries:
-                append_to_faq_json(faq_entries)
-            st.success("✅ All files processed successfully!")
-            st.balloons()
-            st.rerun()
+        st.rerun()
 
 # ── Chunks Table ────────────────────────────────────────────────────
 st.subheader("📚 Knowledge Base Contents")
@@ -313,7 +411,7 @@ else:
             search_text = st.text_input("Search content")
         with search_col2:
             filter_category = st.selectbox("Filter by category", ["All"] + sorted(db_df["category"].unique()))
-        
+            
         if search_text:
             db_df = db_df[db_df["preview"].str.contains(search_text, case=False, na=False)]
         if filter_category != "All":
@@ -339,7 +437,7 @@ with tab1:
     st.subheader("Delete by File")
     filenames = sorted(db_df["filename"].unique()) if not db_df.empty else []
     if filenames:
-        selected_file = st.selectbox("Select file to delete", filenames)
+        selected_file = st.selectbox("Select file to delete", filenames, key="delete_file_select")
         if st.button("❌ Delete Selected File", type="secondary"):
             ids_to_del = db_df.loc[db_df["filename"] == selected_file, "chunk_id"].tolist()
             if ids_to_del:
@@ -381,6 +479,29 @@ with tab3:
             st.rerun()
     else:
         st.info("Vector DB is already empty")
+
+# ── Reset Button Section ──────────────────────────────────────────────
+with st.expander("🧨 Full Reset", expanded=False):
+    st.markdown("This will permanently clear **all local JSON logs and vector database** content.")
+    st.warning("⚠️ This action is irreversible. Use with caution.")
+
+    if st.button("❌ Reset Everything", type="primary"):
+        try:
+            # Delete all chunks in the vector DB
+            all_ids = collection.get()["ids"]
+            if all_ids:
+                collection.delete(ids=all_ids)
+
+            # Clear all JSON log files
+            for file in [HISTORY_FILE, QUERY_LOG_FILE, FEEDBACK_FILE, UPLOAD_LOG_FILE, FAQ_JSON_FILE]:
+                if file.exists():
+                    file.unlink()
+
+            st.success("✅ Successfully cleared all data (vector DB + local JSONs)")
+            st.rerun()
+
+        except Exception as e:
+            st.error(f"Failed to reset: {e}")
 
 # ── Logs Overview ───────────────────────────────────────────────────
 st.header("📊 Analytics & Logs")
@@ -614,43 +735,66 @@ with st.expander("📊 Visual Analytics", expanded=False):
         else:
             st.info("No search history for analytics")
     
-    with tab2:
-        if feedback:
-            df_fb = to_df(feedback)
-            if "helpful" in df_fb.columns and "feedback" not in df_fb.columns:
-                df_fb = df_fb.rename(columns={"helpful": "feedback"})
-            df_fb["vote"] = df_fb["feedback"].astype(str).str[:2]
-            df_fb["date"] = pd.to_datetime(df_fb["timestamp"]).dt.date
-            
-            col1, col2 = st.columns(2)
-            with col1:
-                st.altair_chart(
-                    alt.Chart(df_fb)
-                       .mark_arc()
-                       .encode(
-                           theta="count():Q",
-                           color=alt.Color("vote:N", legend=None,
-                                           scale=alt.Scale(range=["#841306","#5bee60"])),
-                           tooltip=["vote:N","count():Q"]
-                       )
-                       .properties(title="Feedback Ratio", width="container"),
-                    use_container_width=True
+with tab2:
+    if feedback:
+        df_fb = to_df(feedback)
+
+        # Normalize feedback column
+        if "helpful" in df_fb.columns and "feedback" not in df_fb.columns:
+            df_fb = df_fb.rename(columns={"helpful": "feedback"})
+
+        df_fb["feedback"] = df_fb["feedback"].astype(str).str.lower()
+
+        # Map various formats to consistent labels
+        df_fb["vote"] = df_fb["feedback"].apply(
+            lambda x: "positive" if any(p in x for p in ["👍", "positive", "yes"]) else
+                      "negative" if any(n in x for n in ["👎", "negative", "no"]) else "unknown"
+        )
+
+        # Filter out unknown values (optional)
+        df_fb = df_fb[df_fb["vote"].isin(["positive", "negative"])]
+
+        # Fix timestamp and extract date
+        df_fb["timestamp"] = pd.to_datetime(df_fb["timestamp"], errors="coerce", utc=True)
+        df_fb["date"] = df_fb["timestamp"].dt.date
+
+        # PIE CHART
+        col1, col2 = st.columns(2)
+        with col1:
+            st.altair_chart(
+                alt.Chart(df_fb)
+                .mark_arc(innerRadius=50)
+                .encode(
+                    theta="count():Q",
+                    color=alt.Color("vote:N",
+                        scale=alt.Scale(domain=["positive", "negative"],
+                                        range=["#32CD32", "#8B0000"])),
+                    tooltip=["vote:N", "count():Q"]
                 )
-            with col2:
-                st.altair_chart(
-                    alt.Chart(df_fb.groupby("date")["vote"].value_counts().reset_index(name="count"))
-                       .mark_area()
-                       .encode(
-                           x="date:T",
-                           y="count:Q",
-                           color="vote:N",
-                           tooltip=["date:T","vote:N","count:Q"]
-                       )
-                       .properties(title="Feedback Trend", width="container"),
-                    use_container_width=True
+                .properties(title="Feedback Ratio", width="container"),
+                use_container_width=True
+            )
+
+        # TREND AREA CHART
+        with col2:
+            trend_df = df_fb.groupby(["date", "vote"]).size().reset_index(name="count")
+            st.altair_chart(
+                alt.Chart(trend_df)
+                .mark_area()
+                .encode(
+                    x="date:T",
+                    y="count:Q",
+                    color=alt.Color("vote:N",
+                        scale=alt.Scale(domain=["positive", "negative"],
+                                        range=["#32CD32", "#8B0000"])),
+                    tooltip=["date:T", "vote:N", "count:Q"]
                 )
-        else:
-            st.info("No feedback data for analytics")
+                .properties(title="Feedback Trend Over Time", width="container"),
+                use_container_width=True
+            )
+    else:
+        st.info("No feedback data for analytics.")
+
 
 # 📝 FAQ Manager
 with st.expander("📝 FAQ Management", expanded=False):
@@ -710,52 +854,11 @@ with st.expander("📝 FAQ Management", expanded=False):
                 except Exception as e:
                     st.error(f"VectorDB error: {str(e)[:200]}...")
                 st.rerun()
-
-    # View existing FAQs
-    st.write("### Existing FAQ Entries")
-    faq_data = load_json(FAQ_JSON_FILE)
-    if not faq_data:
-        st.info("No FAQ entries yet.")
-    else:
-        df_faq = pd.DataFrame(faq_data)
-        df_faq["category"] = df_faq["metadata"].apply(lambda m: m.get("category", ""))
-        df_faq["priority"] = df_faq["metadata"].apply(lambda m: m.get("priority", ""))
-        df_faq["recency"] = df_faq["metadata"].apply(lambda m: m.get("recency", ""))
-        df_faq["source"] = df_faq["metadata"].apply(lambda m: m.get("source", ""))
-        df_faq = df_faq.drop(columns=["metadata"])
-
-        # Search and filter
-        with st.expander("🔍 Search FAQs", expanded=False):
-            search_col1, search_col2 = st.columns(2)
-            with search_col1:
-                faq_search = st.text_input("Search FAQ text")
-            with search_col2:
-                faq_category = st.selectbox("Filter by category", ["All"] + sorted(df_faq["category"].unique().tolist()))
-            
-            if faq_search:
-                df_faq = df_faq[df_faq["text"].str.contains(faq_search, case=False, na=False)]
-            if faq_category != "All":
-                df_faq = df_faq[df_faq["category"] == faq_category]
-
-        st.dataframe(
-            df_faq,
-            use_container_width=True,
-            column_config={
-                "id": "ID",
-                "text": "FAQ Content",
-                "category": "Category",
-                "priority": "Priority",
-                "recency": "Year",
-                "source": "Source"
-            },
-            hide_index=True
-        )
-
 # Footer
 st.markdown("---")
 st.markdown("""
 <div style="text-align: center; padding: 20px;">
     <p>Made with ❤️ by Joyjeet Roy</p>
-    <p>Version 2.0 • Updated {}</p>
+    <p>• Updated {}</p>
 </div>
 """.format(datetime.now().strftime("%Y-%m-%d")), unsafe_allow_html=True)
